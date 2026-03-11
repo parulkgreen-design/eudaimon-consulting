@@ -22,10 +22,32 @@ export default function ContactPage() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    try {
+      const formBody = new URLSearchParams({
+        "form-name": "contact",
+        name: formData.name,
+        company: formData.company,
+        email: formData.email,
+        reason: formData.reason,
+        message: formData.message,
+      });
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: formBody.toString(),
+      });
+      setSubmitted(true);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setSubmitted(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -57,6 +79,15 @@ export default function ContactPage() {
 
       <div className="divider-gradient" />
 
+      {/* Hidden form so Netlify detects it at build time */}
+      <form name="contact" data-netlify="true" hidden>
+        <input type="text" name="name" />
+        <input type="text" name="company" />
+        <input type="email" name="email" />
+        <input type="text" name="reason" />
+        <textarea name="message" />
+      </form>
+
       {/* Main content */}
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
@@ -65,7 +96,6 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <AnimatedSection>
                 <p className="mono-label text-white/30 mb-8">Direct Contact</p>
-
                 <div className="space-y-6 mb-12">
                   <a
                     href="mailto:parul.kaul-green@eudaimon-consulting.com"
@@ -75,15 +105,12 @@ export default function ContactPage() {
                       <Mail size={16} className="text-[#E63946]" />
                     </div>
                     <div>
-                      <p className="mono-label text-white/30 text-[9px] mb-1">
-                        Email
-                      </p>
+                      <p className="mono-label text-white/30 text-[9px] mb-1">Email</p>
                       <p className="text-white/70 text-sm group-hover:text-white transition-colors break-all">
                         parul.kaul-green@eudaimon-consulting.com
                       </p>
                     </div>
                   </a>
-
                   <a
                     href="https://linkedin.com"
                     target="_blank"
@@ -94,61 +121,34 @@ export default function ContactPage() {
                       <Linkedin size={16} className="text-[#1D6FA4]" />
                     </div>
                     <div>
-                      <p className="mono-label text-white/30 text-[9px] mb-1">
-                        LinkedIn
-                      </p>
+                      <p className="mono-label text-white/30 text-[9px] mb-1">LinkedIn</p>
                       <p className="text-white/70 text-sm group-hover:text-white transition-colors">
                         Parul Kaul Green
                       </p>
                     </div>
                   </a>
-
                   <div className="flex gap-4 items-start">
                     <div className="w-10 h-10 rounded-xl bg-[#F4A01C]/10 flex items-center justify-center flex-shrink-0">
                       <MapPin size={16} className="text-[#F4A01C]" />
                     </div>
                     <div>
-                      <p className="mono-label text-white/30 text-[9px] mb-1">
-                        Location
-                      </p>
-                      <p className="text-white/70 text-sm">
-                        London, United Kingdom
-                      </p>
+                      <p className="mono-label text-white/30 text-[9px] mb-1">Location</p>
+                      <p className="text-white/70 text-sm">London, United Kingdom</p>
                     </div>
                   </div>
                 </div>
-
-                {/* What to expect */}
                 <div className="glass rounded-2xl p-6">
-                  <p className="mono-label text-white/30 text-[9px] mb-6">
-                    What to Expect
-                  </p>
+                  <p className="mono-label text-white/30 text-[9px] mb-6">What to Expect</p>
                   <div className="space-y-4">
                     {[
-                      [
-                        "01",
-                        "Initial response within 24 hours",
-                        "We respond to every enquiry personally.",
-                      ],
-                      [
-                        "02",
-                        "Discovery conversation",
-                        "A no-obligation call to understand your situation.",
-                      ],
-                      [
-                        "03",
-                        "Tailored proposal",
-                        "A bespoke approach scoped to your specific challenge.",
-                      ],
+                      ["01", "Initial response within 24 hours", "We respond to every enquiry personally."],
+                      ["02", "Discovery conversation", "A no-obligation call to understand your situation."],
+                      ["03", "Tailored proposal", "A bespoke approach scoped to your specific challenge."],
                     ].map(([num, title, body]) => (
                       <div key={num} className="flex gap-3">
-                        <span className="font-mono text-[#E63946]/40 text-xs mt-0.5 flex-shrink-0">
-                          {num}
-                        </span>
+                        <span className="font-mono text-[#E63946]/40 text-xs mt-0.5 flex-shrink-0">{num}</span>
                         <div>
-                          <p className="text-white/70 text-sm font-medium">
-                            {title}
-                          </p>
+                          <p className="text-white/70 text-sm font-medium">{title}</p>
                           <p className="text-white/30 text-xs mt-0.5">{body}</p>
                         </div>
                       </div>
@@ -166,52 +166,44 @@ export default function ContactPage() {
                     <div className="w-16 h-16 bg-[#E63946]/10 rounded-full flex items-center justify-center mx-auto mb-6">
                       <Send size={24} className="text-[#E63946]" />
                     </div>
-                    <h3 className="font-display text-white text-2xl mb-3">
-                      Message received.
-                    </h3>
+                    <h3 className="font-display text-white text-2xl mb-3">Message received.</h3>
                     <p className="text-white/50">
-                      Thank you for reaching out. We will be in touch within 24
-                      hours.
+                      Thank you for reaching out. We will be in touch within 24 hours.
                     </p>
                   </div>
                 ) : (
                   <form
+                    name="contact"
                     onSubmit={handleSubmit}
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
                     className="glass rounded-2xl p-8 md:p-10 space-y-6"
                   >
-                    <p className="mono-label text-white/30 text-[9px] mb-8">
-                      Send a Message
-                    </p>
+                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="bot-field" />
+
+                    <p className="mono-label text-white/30 text-[9px] mb-8">Send a Message</p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
-                        <label className="mono-label text-white/30 text-[9px] block mb-2">
-                          Full Name *
-                        </label>
+                        <label className="mono-label text-white/30 text-[9px] block mb-2">Full Name *</label>
                         <input
                           type="text"
+                          name="name"
                           required
                           value={formData.name}
-                          onChange={(e) =>
-                            setFormData({ ...formData, name: e.target.value })
-                          }
+                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                           placeholder="Your name"
                           className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white/80 text-sm placeholder:text-white/20 focus:outline-none focus:border-[#E63946]/50 transition-colors"
                         />
                       </div>
                       <div>
-                        <label className="mono-label text-white/30 text-[9px] block mb-2">
-                          Company
-                        </label>
+                        <label className="mono-label text-white/30 text-[9px] block mb-2">Company</label>
                         <input
                           type="text"
+                          name="company"
                           value={formData.company}
-                          onChange={(e) =>
-                            setFormData({
-                              ...formData,
-                              company: e.target.value,
-                            })
-                          }
+                          onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                           placeholder="Your company"
                           className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white/80 text-sm placeholder:text-white/20 focus:outline-none focus:border-[#E63946]/50 transition-colors"
                         />
@@ -219,16 +211,13 @@ export default function ContactPage() {
                     </div>
 
                     <div>
-                      <label className="mono-label text-white/30 text-[9px] block mb-2">
-                        Email Address *
-                      </label>
+                      <label className="mono-label text-white/30 text-[9px] block mb-2">Email Address *</label>
                       <input
                         type="email"
+                        name="email"
                         required
                         value={formData.email}
-                        onChange={(e) =>
-                          setFormData({ ...formData, email: e.target.value })
-                        }
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="your@email.com"
                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white/80 text-sm placeholder:text-white/20 focus:outline-none focus:border-[#E63946]/50 transition-colors"
                       />
@@ -238,14 +227,13 @@ export default function ContactPage() {
                       <label className="mono-label text-white/30 text-[9px] block mb-2">
                         I&apos;m interested in
                       </label>
+                      <input type="hidden" name="reason" value={formData.reason} />
                       <div className="flex flex-wrap gap-2">
                         {reasons.map((reason) => (
                           <button
                             key={reason}
                             type="button"
-                            onClick={() =>
-                              setFormData({ ...formData, reason })
-                            }
+                            onClick={() => setFormData({ ...formData, reason })}
                             className={`px-3 py-1.5 rounded-full border mono-label text-[9px] transition-all ${
                               formData.reason === reason
                                 ? "border-[#E63946] text-[#E63946] bg-[#E63946]/10"
@@ -259,16 +247,13 @@ export default function ContactPage() {
                     </div>
 
                     <div>
-                      <label className="mono-label text-white/30 text-[9px] block mb-2">
-                        Message *
-                      </label>
+                      <label className="mono-label text-white/30 text-[9px] block mb-2">Message *</label>
                       <textarea
+                        name="message"
                         required
                         rows={5}
                         value={formData.message}
-                        onChange={(e) =>
-                          setFormData({ ...formData, message: e.target.value })
-                        }
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         placeholder="Tell us about your situation and how we can help..."
                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white/80 text-sm placeholder:text-white/20 focus:outline-none focus:border-[#E63946]/50 transition-colors resize-none"
                       />
@@ -276,13 +261,13 @@ export default function ContactPage() {
 
                     <button
                       type="submit"
-                      className="group w-full flex items-center justify-center gap-2 px-8 py-4 bg-[#E63946] text-white rounded-xl font-medium hover:bg-[#c92a35] transition-all duration-200"
+                      disabled={loading}
+                      className="group w-full flex items-center justify-center gap-2 px-8 py-4 bg-[#E63946] text-white rounded-xl font-medium hover:bg-[#c92a35] transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed"
                     >
-                      Send Message
-                      <ArrowRight
-                        size={16}
-                        className="group-hover:translate-x-1 transition-transform"
-                      />
+                      {loading ? "Sending..." : "Send Message"}
+                      {!loading && (
+                        <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                      )}
                     </button>
                   </form>
                 )}
