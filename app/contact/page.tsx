@@ -28,23 +28,25 @@ export default function ContactPage() {
     e.preventDefault();
     setLoading(true);
     try {
-      const formBody = new URLSearchParams({
-        "form-name": "contact",
-        name: formData.name,
-        company: formData.company,
-        email: formData.email,
-        reason: formData.reason,
-        message: formData.message,
-      });
-      await fetch("/", {
+      const response = await fetch("https://formspree.io/f/xpqydzge", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: formBody.toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          company: formData.company,
+          email: formData.email,
+          reason: formData.reason,
+          message: formData.message,
+        }),
       });
-      setSubmitted(true);
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        alert("Something went wrong. Please try again or email us directly.");
+      }
     } catch (error) {
       console.error("Form submission error:", error);
-      setSubmitted(true);
+      alert("Something went wrong. Please try again or email us directly.");
     } finally {
       setLoading(false);
     }
@@ -78,15 +80,6 @@ export default function ContactPage() {
       </section>
 
       <div className="divider-gradient" />
-
-      {/* Hidden form so Netlify detects it at build time */}
-      <form name="contact" data-netlify="true" hidden>
-        <input type="text" name="name" />
-        <input type="text" name="company" />
-        <input type="email" name="email" />
-        <input type="text" name="reason" />
-        <textarea name="message" />
-      </form>
 
       {/* Main content */}
       <section className="py-24 px-6">
@@ -173,15 +166,9 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form
-                    name="contact"
                     onSubmit={handleSubmit}
-                    data-netlify="true"
-                    netlify-honeypot="bot-field"
                     className="glass rounded-2xl p-8 md:p-10 space-y-6"
                   >
-                    <input type="hidden" name="form-name" value="contact" />
-                    <input type="hidden" name="bot-field" />
-
                     <p className="mono-label text-white/30 text-[9px] mb-8">Send a Message</p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
