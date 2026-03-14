@@ -5,14 +5,25 @@ import AnimatedSection from "@/components/AnimatedSection";
 const featured = {
   tag: "AI Strategy",
   color: "#E63946",
-  title: "The AI Operating Model for Financial Services",
+  title: "The February 9 Sell-Off: What It Really Means for Insurance Brokers",
   excerpt:
-    "Artificial intelligence is no longer a future capability — it is a present competitive differentiator. Yet most financial services companies are still treating AI as a collection of discrete use cases rather than a foundational shift in how they operate. This piece explores what a truly AI-native operating model looks like for insurers, banks, and investment managers.",
-  readTime: "8 min read",
-  date: "December 2024",
+    "When two AI distribution tools launched inside ChatGPT in a single morning, broker stocks fell sharply. Markets reacted with panic. The strategic reality is far more nuanced — and more instructive for every insurer and broker.",
+  readTime: "6 min read",
+  date: "February 2026",
+  href: "/insights/broker-ai-disruption",
 };
 
 const insights = [
+  {
+    tag: "AI Strategy",
+    color: "#E63946",
+    title: "The February 9 Sell-Off: What It Really Means for Insurance Brokers",
+    excerpt:
+      "When two AI tools launched inside ChatGPT, broker stocks fell sharply. Markets reacted with panic. The strategic reality is far more nuanced — and more instructive for every insurer and broker.",
+    readTime: "6 min read",
+    date: "February 2026",
+    href: "/insights/broker-ai-disruption",
+  },
   {
     tag: "Digital Transformation",
     color: "#1D6FA4",
@@ -21,6 +32,7 @@ const insights = [
       "Financial services companies have invested billions in digital transformation. Most have little to show for it. We explore the five structural reasons transformations stall — and how to build a programme that actually scales.",
     readTime: "6 min read",
     date: "November 2024",
+    href: "/contact",
   },
   {
     tag: "M&A",
@@ -30,6 +42,7 @@ const insights = [
       "In the AI era, the most valuable acquisitions are rarely about scale — they're about acquiring capabilities you cannot build fast enough. We outline a framework for identifying, valuing, and integrating capability-led acquisitions.",
     readTime: "7 min read",
     date: "November 2024",
+    href: "/contact",
   },
   {
     tag: "Corporate Strategy",
@@ -39,6 +52,7 @@ const insights = [
       "When AI systems can make decisions, execute trades, underwrite risks, and serve customers autonomously — what does corporate strategy even mean? A provocation for financial services leaders.",
     readTime: "5 min read",
     date: "October 2024",
+    href: "/contact",
   },
   {
     tag: "Technology Partnerships",
@@ -48,6 +62,7 @@ const insights = [
       "The days of building everything in-house are over. Financial services companies that master the art of technology partnership — identifying the right partners, structuring mutually beneficial terms, and managing relationships over time — will outcompete those that don't.",
     readTime: "6 min read",
     date: "October 2024",
+    href: "/contact",
   },
   {
     tag: "ESG Strategy",
@@ -57,6 +72,7 @@ const insights = [
       "ESG is no longer a compliance exercise. It is a strategic imperative. We explore how financial services companies can build genuine ESG strategies that create value, manage risk, and meet the expectations of increasingly demanding stakeholders.",
     readTime: "7 min read",
     date: "September 2024",
+    href: "/contact",
   },
   {
     tag: "Innovation",
@@ -66,6 +82,7 @@ const insights = [
       "Launching a proof of concept is easy. Scaling it is hard. Most insurers are drowning in pilots that never achieve commercial relevance. We lay out the conditions required to move from experimental to enterprise-scale innovation.",
     readTime: "5 min read",
     date: "September 2024",
+    href: "/contact",
   },
 ];
 
@@ -83,7 +100,6 @@ const topics = [
 export default function InsightsPage() {
   return (
     <div className="bg-[#0a0a0a] min-h-screen">
-      {/* Hero */}
       <section className="relative pt-40 pb-24 px-6 overflow-hidden">
         <div
           className="absolute top-0 left-[30%] w-[400px] h-[400px] rounded-full blur-[140px] opacity-10"
@@ -112,7 +128,6 @@ export default function InsightsPage() {
 
       <div className="divider-gradient" />
 
-      {/* Topics */}
       <section className="py-8 px-6 bg-[#080808]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-wrap gap-3">
@@ -128,7 +143,6 @@ export default function InsightsPage() {
         </div>
       </section>
 
-      {/* Featured article */}
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection>
@@ -140,7 +154,6 @@ export default function InsightsPage() {
                   transform: "translate(30%, -30%)",
                 }}
               />
-
               <div className="relative z-10 max-w-3xl">
                 <div className="flex items-center gap-4 mb-8">
                   <span
@@ -156,14 +169,12 @@ export default function InsightsPage() {
                     Featured
                   </span>
                 </div>
-
                 <h2 className="display-md text-white font-display mb-6">
                   {featured.title}
                 </h2>
                 <p className="text-white/50 text-lg leading-relaxed mb-8">
                   {featured.excerpt}
                 </p>
-
                 <div className="flex items-center gap-6">
                   <div className="flex items-center gap-2 text-white/30">
                     <Clock size={12} />
@@ -175,7 +186,7 @@ export default function InsightsPage() {
                     {featured.date}
                   </span>
                   <Link
-                    href="/contact"
+                    href={featured.href}
                     className="group/link flex items-center gap-2 text-sm"
                     style={{ color: featured.color }}
                   >
@@ -192,13 +203,11 @@ export default function InsightsPage() {
         </div>
       </section>
 
-      {/* Article grid */}
       <section className="py-16 px-6 pb-32">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection>
             <p className="mono-label text-white/30 mb-10">Latest Insights</p>
           </AnimatedSection>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {insights.map((article, i) => (
               <AnimatedSection key={article.title} delay={i * 80}>
@@ -217,15 +226,12 @@ export default function InsightsPage() {
                       {article.date}
                     </span>
                   </div>
-
                   <h3 className="font-display text-white text-xl mb-4 leading-tight flex-grow">
                     {article.title}
                   </h3>
-
                   <p className="text-white/40 text-sm leading-relaxed mb-6">
                     {article.excerpt}
                   </p>
-
                   <div className="flex items-center justify-between pt-4 border-t border-white/5">
                     <div className="flex items-center gap-2 text-white/30">
                       <Clock size={11} />
@@ -234,7 +240,7 @@ export default function InsightsPage() {
                       </span>
                     </div>
                     <Link
-                      href="/contact"
+                      href={article.href}
                       className="group/link flex items-center gap-1 mono-label text-[9px] transition-colors"
                       style={{ color: article.color }}
                     >
@@ -252,7 +258,6 @@ export default function InsightsPage() {
         </div>
       </section>
 
-      {/* Subscribe CTA */}
       <section className="py-24 px-6 bg-[#080808]">
         <div className="max-w-2xl mx-auto text-center">
           <AnimatedSection>
