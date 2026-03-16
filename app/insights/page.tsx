@@ -3,17 +3,27 @@ import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const featured = {
-  tag: "AI Strategy",
-  color: "#E63946",
-  title: "The February 9 Sell-Off: What It Really Means for Insurance Brokers",
+  tag: "M&A Strategy",
+  color: "#1D6FA4",
+  title: "How Insurance Giants Finance Mega-Deals: The Zurich/Beazley Playbook",
   excerpt:
-    "When two AI distribution tools launched inside ChatGPT in a single morning, broker stocks fell sharply. Markets reacted with panic. The strategic reality is far more nuanced — and more instructive for every insurer and broker.",
-  readTime: "6 min read",
-  date: "February 2026",
-  href: "/insights/broker-ai-disruption",
+    "Four landmark deals. Four different financing approaches. One unifying insight: the quality of the target determines the structure of the deal. We examine USD 58bn of transactions to find the pattern.",
+  readTime: "7 min read",
+  date: "March 2026",
+  href: "/insights/insurance-ma-financing",
 };
 
 const insights = [
+  {
+    tag: "M&A Strategy",
+    color: "#1D6FA4",
+    title: "How Insurance Giants Finance Mega-Deals: The Zurich/Beazley Playbook",
+    excerpt:
+      "Four landmark deals. Four different financing approaches. One unifying insight: the quality of the target determines the structure of the deal.",
+    readTime: "7 min read",
+    date: "March 2026",
+    href: "/insights/insurance-ma-financing",
+  },
   {
     tag: "AI Strategy",
     color: "#E63946",
@@ -59,7 +69,7 @@ const insights = [
     color: "#1D6FA4",
     title: "Why Technology Partnerships Matter More Than Ever",
     excerpt:
-      "The days of building everything in-house are over. Financial services companies that master the art of technology partnership — identifying the right partners, structuring mutually beneficial terms, and managing relationships over time — will outcompete those that don't.",
+      "The days of building everything in-house are over. Financial services companies that master the art of technology partnership will outcompete those that don't.",
     readTime: "6 min read",
     date: "October 2024",
     href: "/contact",
@@ -69,7 +79,7 @@ const insights = [
     color: "#F4A01C",
     title: "Integrating ESG into Financial Services Strategy",
     excerpt:
-      "ESG is no longer a compliance exercise. It is a strategic imperative. We explore how financial services companies can build genuine ESG strategies that create value, manage risk, and meet the expectations of increasingly demanding stakeholders.",
+      "ESG is no longer a compliance exercise. It is a strategic imperative. We explore how financial services companies can build genuine ESG strategies that create value and manage risk.",
     readTime: "7 min read",
     date: "September 2024",
     href: "/contact",
@@ -79,7 +89,7 @@ const insights = [
     color: "#E63946",
     title: "From Pilot to Platform: Scaling Innovation in Insurance",
     excerpt:
-      "Launching a proof of concept is easy. Scaling it is hard. Most insurers are drowning in pilots that never achieve commercial relevance. We lay out the conditions required to move from experimental to enterprise-scale innovation.",
+      "Launching a proof of concept is easy. Scaling it is hard. Most insurers are drowning in pilots that never achieve commercial relevance.",
     readTime: "5 min read",
     date: "September 2024",
     href: "/contact",
