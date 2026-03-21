@@ -3,17 +3,27 @@ import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const featured = {
-  tag: "M&A Strategy",
-  color: "#1D6FA4",
-  title: "How Insurance Giants Finance Mega-Deals: The Zurich/Beazley Playbook",
+  tag: "AI Risk · Insurance",
+  color: "#E63946",
+  title: "From Cyber Liability to Algorithmic Malpractice: How Insurers Can Underwrite AI Risk in 2026",
   excerpt:
-    "Four landmark deals. Four different financing approaches. One unifying insight: the quality of the target determines the structure of the deal. We examine USD 58bn of transactions to find the pattern.",
-  readTime: "7 min read",
+    "The insurance industry spent two decades building a playbook for cyber risk. That playbook is now being challenged by AI. The shift is not gradual — it is structural.",
+  readTime: "6 min read",
   date: "March 2026",
-  href: "/insights/insurance-ma-financing",
+  href: "/insights/algorithmic-malpractice",
 };
 
 const insights = [
+  {
+    tag: "AI Risk · Insurance",
+    color: "#E63946",
+    title: "From Cyber Liability to Algorithmic Malpractice: How Insurers Can Underwrite AI Risk in 2026",
+    excerpt:
+      "The insurance industry spent two decades building a playbook for cyber risk. That playbook is now being challenged by AI. The shift is not gradual — it is structural.",
+    readTime: "6 min read",
+    date: "March 2026",
+    href: "/insights/algorithmic-malpractice",
+  },
   {
     tag: "M&A Strategy",
     color: "#1D6FA4",
@@ -113,24 +123,17 @@ export default function InsightsPage() {
       <section className="relative pt-40 pb-24 px-6 overflow-hidden">
         <div
           className="absolute top-0 left-[30%] w-[400px] h-[400px] rounded-full blur-[140px] opacity-10"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(244,160,28,0.6) 0%, transparent 70%)",
-          }}
+          style={{ background: "radial-gradient(circle, rgba(244,160,28,0.6) 0%, transparent 70%)" }}
         />
         <div className="max-w-7xl mx-auto">
           <AnimatedSection>
             <p className="mono-label text-[#F4A01C] mb-6">Thought Leadership</p>
             <h1 className="display-xl text-white font-display max-w-4xl mb-8">
               Insights for{" "}
-              <span className="italic gradient-text-amber">
-                financial services leaders.
-              </span>
+              <span className="italic gradient-text-amber">financial services leaders.</span>
             </h1>
             <p className="text-white/50 text-xl leading-relaxed max-w-2xl">
-              Strategic thinking on digital transformation, AI strategy, and the
-              future of financial services — from practitioners who have been
-              inside the world's largest insurers.
+              Strategic thinking on digital transformation, AI strategy, and the future of financial services — from practitioners who have been inside the world's largest insurers.
             </p>
           </AnimatedSection>
         </div>
@@ -168,43 +171,27 @@ export default function InsightsPage() {
                 <div className="flex items-center gap-4 mb-8">
                   <span
                     className="inline-block mono-label text-[9px] px-3 py-1 rounded-full"
-                    style={{
-                      color: featured.color,
-                      background: `${featured.color}15`,
-                    }}
+                    style={{ color: featured.color, background: `${featured.color}15` }}
                   >
                     {featured.tag}
                   </span>
-                  <span className="mono-label text-white/20 text-[9px]">
-                    Featured
-                  </span>
+                  <span className="mono-label text-white/20 text-[9px]">Featured</span>
                 </div>
-                <h2 className="display-md text-white font-display mb-6">
-                  {featured.title}
-                </h2>
-                <p className="text-white/50 text-lg leading-relaxed mb-8">
-                  {featured.excerpt}
-                </p>
+                <h2 className="display-md text-white font-display mb-6">{featured.title}</h2>
+                <p className="text-white/50 text-lg leading-relaxed mb-8">{featured.excerpt}</p>
                 <div className="flex items-center gap-6">
                   <div className="flex items-center gap-2 text-white/30">
                     <Clock size={12} />
-                    <span className="mono-label text-[9px]">
-                      {featured.readTime}
-                    </span>
+                    <span className="mono-label text-[9px]">{featured.readTime}</span>
                   </div>
-                  <span className="mono-label text-white/30 text-[9px]">
-                    {featured.date}
-                  </span>
+                  <span className="mono-label text-white/30 text-[9px]">{featured.date}</span>
                   <Link
                     href={featured.href}
                     className="group/link flex items-center gap-2 text-sm"
                     style={{ color: featured.color }}
                   >
                     Read more
-                    <ArrowRight
-                      size={14}
-                      className="group-hover/link:translate-x-1 transition-transform"
-                    />
+                    <ArrowRight size={14} className="group-hover/link:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </div>
@@ -225,29 +212,20 @@ export default function InsightsPage() {
                   <div className="flex items-center justify-between mb-6">
                     <span
                       className="mono-label text-[9px] px-3 py-1 rounded-full"
-                      style={{
-                        color: article.color,
-                        background: `${article.color}15`,
-                      }}
+                      style={{ color: article.color, background: `${article.color}15` }}
                     >
                       {article.tag}
                     </span>
-                    <span className="mono-label text-white/20 text-[9px]">
-                      {article.date}
-                    </span>
+                    <span className="mono-label text-white/20 text-[9px]">{article.date}</span>
                   </div>
                   <h3 className="font-display text-white text-xl mb-4 leading-tight flex-grow">
                     {article.title}
                   </h3>
-                  <p className="text-white/40 text-sm leading-relaxed mb-6">
-                    {article.excerpt}
-                  </p>
+                  <p className="text-white/40 text-sm leading-relaxed mb-6">{article.excerpt}</p>
                   <div className="flex items-center justify-between pt-4 border-t border-white/5">
                     <div className="flex items-center gap-2 text-white/30">
                       <Clock size={11} />
-                      <span className="mono-label text-[9px]">
-                        {article.readTime}
-                      </span>
+                      <span className="mono-label text-[9px]">{article.readTime}</span>
                     </div>
                     <Link
                       href={article.href}
@@ -255,10 +233,7 @@ export default function InsightsPage() {
                       style={{ color: article.color }}
                     >
                       Read
-                      <ArrowRight
-                        size={11}
-                        className="group-hover/link:translate-x-0.5 transition-transform"
-                      />
+                      <ArrowRight size={11} className="group-hover/link:translate-x-0.5 transition-transform" />
                     </Link>
                   </div>
                 </div>
@@ -276,18 +251,14 @@ export default function InsightsPage() {
               <span className="italic gradient-text-amber">curve.</span>
             </h2>
             <p className="text-white/40 mb-10">
-              Strategic insights on AI, digital transformation, and financial
-              services — delivered to your inbox.
+              Strategic insights on AI, digital transformation, and financial services — delivered to your inbox.
             </p>
             <Link
               href="/contact"
               className="group inline-flex items-center gap-2 px-8 py-4 bg-[#E63946] text-white rounded-full font-medium hover:bg-[#c92a35] transition-all"
             >
               Get in Touch
-              <ArrowRight
-                size={16}
-                className="group-hover:translate-x-1 transition-transform"
-              />
+              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </AnimatedSection>
         </div>
