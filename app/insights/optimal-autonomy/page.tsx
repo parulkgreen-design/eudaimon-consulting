@@ -27,7 +27,7 @@ export default function OptimalAutonomyArticle() {
       subtitle: "Business Model Reinvention",
       cr: "CR: <88% → <85%",
       color: "#1D6FA4",
-      body: "A new operating model built around agent capabilities rather than adapted from legacy processes. Parametric products settle within minutes of event confirmation. Embedded distribution eliminates broker intermediation for vanilla products. Continuous usage-based underwriting reprices coverage in near-real-time. The policy becomes a dynamic risk management relationship.",
+      body: "A new operating model built around agent capabilities rather than adapted from legacy processes. Parametric products settle within minutes of event confirmation. Embedded distribution eliminates broker intermediation for vanilla products. Continuous usage-based underwriting reprices coverage in near-real-time.",
       kpis: ["Parametric GWP 15–25% of portfolio", "Zero-touch settlement >80%", "Embedded channel 20–30% personal lines GWP", "Autonomous carrier CR target <85%"],
     },
   ];
@@ -38,7 +38,7 @@ export default function OptimalAutonomyArticle() {
       cr: "~93%",
       horizon: "H2 Leading",
       horizonColor: "#1D6FA4",
-      horizonBg: "rgba(29,111,164,0.15)",
+      horizonBg: "rgba(29,111,164,0.2)",
       useCases: "400+ use cases; SecureGPT; real-time IoT risk scoring; claims triage",
       moat: "900 data scientists; Group CDAIO role; Stanford HAI partner",
       gap: "Agentic orchestration still fragmented across 50 markets — governance inconsistency risk",
@@ -48,7 +48,7 @@ export default function OptimalAutonomyArticle() {
       cr: "92.2%",
       horizon: "H2 Leading",
       horizonColor: "#1D6FA4",
-      horizonBg: "rgba(29,111,164,0.15)",
+      horizonBg: "rgba(29,111,164,0.2)",
       useCases: "900+ use cases; Anthropic partnership; claims automation; dynamic pricing pilots",
       moat: "Record €17.4bn profit; €2tr AUM data asset; new digital board exec",
       gap: "Explicitly cautious on autonomy pace; regulatory complexity in Germany/EU",
@@ -58,7 +58,7 @@ export default function OptimalAutonomyArticle() {
       cr: "~93%",
       horizon: "H2 → H3",
       horizonColor: "#3B6D11",
-      horizonBg: "rgba(59,109,17,0.15)",
+      horizonBg: "rgba(59,109,17,0.2)",
       useCases: "85% UW/claims automation target; Chubb Studio 250+ embedded partners; $1.4bn digital GWP",
       moat: "3,500 engineers globally; Chubb Studio moat; 20% workforce restructuring underway",
       gap: "Execution risk in 20% headcount reduction; cultural change management",
@@ -68,7 +68,7 @@ export default function OptimalAutonomyArticle() {
       cr: "~94%",
       horizon: "H1 → H2",
       horizonColor: "#854F0B",
-      horizonBg: "rgba(133,79,11,0.15)",
+      horizonBg: "rgba(133,79,11,0.2)",
       useCases: "160+ AI solutions; Agentic Hyper Challenge (200 prototypes); 13-min claims resolution (UK)",
       moat: "AI Lab (ETH Zurich / St Gallen); new Chief AI Officer Oct 2025",
       gap: "Moving from pilots to scale; not yet committed to explicit CR targets from AI",
@@ -78,7 +78,7 @@ export default function OptimalAutonomyArticle() {
       cr: "94.6%",
       horizon: "H1",
       horizonColor: "#854F0B",
-      horizonBg: "rgba(133,79,11,0.15)",
+      horizonBg: "rgba(133,79,11,0.2)",
       useCases: "12 AI fraud models; £90m+ claims savings; claims summarisation; medical UW tools",
       moat: "25m customer data asset; Direct Line acquisition adds scale",
       gap: "End-to-end transformation still aspirational; behind leaders on architecture",
@@ -92,7 +92,7 @@ export default function OptimalAutonomyArticle() {
     },
     {
       title: "Governance as competitive licence",
-      body: "Counterintuitively, the deepest moat may not be the most aggressive automation — it will be the most trusted. Explainability infrastructure, model cards, and a formally documented agentic authority framework become differentiators with sophisticated commercial clients. Carriers that build governance before they need it will expand autonomy faster and more cheaply than those who retrofit it under regulatory pressure.",
+      body: "Counterintuitively, the deepest moat may not be the most aggressive automation — it will be the most trusted. Explainability infrastructure, model cards, and a formally documented agentic authority framework become differentiators with sophisticated commercial clients. Carriers that build governance before they need it will expand autonomy faster than those who retrofit it under regulatory pressure.",
     },
     {
       title: "Speed to settlement as brand promise",
@@ -114,7 +114,7 @@ export default function OptimalAutonomyArticle() {
     {
       num: "03",
       title: "Reskilling, not retrenchment",
-      body: "The primary failure mode in insurance transformation is not technical — it is organisational. Underwriters whose role shifts from decision-maker to model governor require structured reskilling, not redundancy. Carriers that invest in this transition retain institutional knowledge that cannot be recovered once lost. Chubb's 20% workforce reduction, if managed as a genuine role transition programme, is the model.",
+      body: "The primary failure mode in insurance transformation is not technical — it is organisational. Underwriters whose role shifts from decision-maker to model governor require structured reskilling, not redundancy. Carriers that invest in this transition retain institutional knowledge that cannot be recovered once lost.",
     },
   ];
 
@@ -127,50 +127,45 @@ export default function OptimalAutonomyArticle() {
           style={{ background: "radial-gradient(circle, rgba(29,111,164,0.8) 0%, transparent 70%)" }}
         />
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
-
         <div className="max-w-3xl mx-auto relative z-10">
-          <Link href="/insights" className="inline-flex items-center gap-2 text-white/40 hover:text-white transition-colors text-sm mb-10">
+          <Link href="/insights" className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm mb-10">
             <ChevronLeft size={14} />
             Back to Insights
           </Link>
-
           <div className="flex flex-wrap items-center gap-3 mb-6">
-            <span className="mono-label text-[9px] px-3 py-1 rounded-full bg-[#1D6FA4]/15 text-[#1D6FA4]">Corporate Strategy</span>
-            <span className="mono-label text-[9px] px-3 py-1 rounded-full bg-white/5 text-white/40 border border-white/10">Strategic Research Note</span>
-            <span className="mono-label text-white/20 text-[9px]">March 2026</span>
-            <div className="flex items-center gap-2 text-white/20">
+            <span className="mono-label text-[9px] px-3 py-1 rounded-full bg-[#1D6FA4]/20 text-[#60a5fa]">Corporate Strategy</span>
+            <span className="mono-label text-[9px] px-3 py-1 rounded-full bg-white/10 text-white/70 border border-white/20">Strategic Research Note</span>
+            <span className="mono-label text-white/50 text-[9px]">March 2026</span>
+            <div className="flex items-center gap-2 text-white/50">
               <Clock size={11} />
               <span className="mono-label text-[9px]">8 min read</span>
             </div>
           </div>
-
           <h1 className="font-display text-white text-4xl md:text-5xl leading-tight mb-8">
             The Optimal Frontier: Finding the Balance Between Robots and Risk
           </h1>
-          <p className="text-white text-lg font-display mb-2">Redefining Insurance Strategy 2026–2030</p>
-          <p className="text-white/50 text-xl leading-relaxed border-l-2 border-[#1D6FA4] pl-5 mt-6">
+          <p className="text-white text-lg font-display mb-6">Redefining Insurance Strategy 2026–2030</p>
+          <p className="text-white/80 text-xl leading-relaxed border-l-2 border-[#1D6FA4] pl-5">
             Carriers that architect toward Optimal Autonomy — a calibrated balance of automated and human decision-making — will structurally reduce combined ratios by 8–15 percentage points by 2030. Those that treat this as another technology upgrade will cede those economics to more decisive competitors.
           </p>
-          <p className="text-white/25 text-xs mt-6 font-mono">Based on publicly available 2025 annual report disclosures and industry benchmarks · © 2026 Eudaimon Consulting</p>
+          <p className="text-white/40 text-xs mt-6 font-mono">Based on publicly available 2025 annual report disclosures and industry benchmarks · © 2026 Eudaimon Consulting</p>
         </div>
       </section>
 
       <div className="divider-gradient" />
 
       <article className="py-16 px-6">
-        <div className="max-w-3xl mx-auto space-y-8 text-white/70 text-base leading-relaxed">
+        <div className="max-w-3xl mx-auto space-y-8 text-white/90 text-base leading-relaxed">
 
-          {/* Intro */}
           <p>The industry spent 2023–2025 deploying generative AI as a productivity layer — drafting policy wordings, summarising claims notes, powering customer service chatbots. The ROIC has been real but modest: 10–20% efficiency gains within functions, no structural change to the combined ratio.</p>
           <p>The strategic discontinuity arriving between 2026 and 2030 is categorically different. Autonomous agent systems — capable of perceiving context, making sequential decisions, using tools, and coordinating with other agents — do not improve insurance workflows. They replace them.</p>
 
-          {/* Core thesis box */}
-          <div className="glass rounded-2xl p-8 border-l-4 border-[#1D6FA4]" style={{ borderLeft: "4px solid #1D6FA4" }}>
-            <p className="mono-label text-[#1D6FA4] text-[9px] mb-3">The Core Thesis</p>
+          {/* Core thesis */}
+          <div className="glass rounded-2xl p-8" style={{ borderLeft: "4px solid #1D6FA4" }}>
+            <p className="mono-label text-[#60a5fa] text-[9px] mb-3">The Core Thesis</p>
             <p className="text-white text-lg leading-relaxed font-medium">The question for insurance leadership is no longer whether to deploy agents, but how fast, how deep, and under what governance architecture. Carriers that architect toward Optimal Autonomy will structurally reduce combined ratios by 8–15 percentage points by 2030. The window to set the architecture is now.</p>
           </div>
 
-          {/* Why this window matters */}
           <h2 className="font-display text-white text-2xl mt-10 mb-6">Why this window matters</h2>
           <p>Three structural forces create an immediate forcing function — not a future consideration.</p>
 
@@ -181,52 +176,49 @@ export default function OptimalAutonomyArticle() {
               { val: "Aug 2026", label: "EU AI Act enforcement deadline", sub: "High-risk AI systems — including insurance pricing and risk scoring — face full compliance obligations." },
             ].map((m) => (
               <div key={m.val} className="glass rounded-xl p-5">
-                <p className="font-display text-white text-2xl font-bold mb-1" style={{ color: "#1D6FA4" }}>{m.val}</p>
-                <p className="text-white/70 text-sm font-medium mb-1">{m.label}</p>
-                <p className="text-white/40 text-xs leading-relaxed">{m.sub}</p>
+                <p className="font-display text-2xl font-bold mb-1" style={{ color: "#60a5fa" }}>{m.val}</p>
+                <p className="text-white text-sm font-medium mb-2">{m.label}</p>
+                <p className="text-white/70 text-xs leading-relaxed">{m.sub}</p>
               </div>
             ))}
           </div>
 
-          {/* Pull quote */}
-          <div className="border-t-2 border-b border-white/10 py-8 my-8" style={{ borderTopColor: "#1D6FA4" }}>
+          <div className="border-t-2 border-b border-white/20 py-8 my-8" style={{ borderTopColor: "#1D6FA4" }}>
             <p className="font-display text-white text-xl italic leading-relaxed">"CEOs who defer architectural decisions in the expectation of greater market clarity are not managing risk — they are accepting structural disadvantage."</p>
           </div>
 
-          {/* Optimal Autonomy definition */}
           <h2 className="font-display text-white text-2xl mt-10 mb-4">Defining Optimal Autonomy</h2>
           <p>Maximum autonomy — 100% automated decision-making — is neither achievable nor strategically correct within this planning horizon. Novel risk classes, systemic catastrophe events, litigation exposure, and regulatory requirements for human oversight create hard limits. The target is not maximum automation. It is optimal automation.</p>
 
-          <div className="glass rounded-xl p-6 my-6 border border-[#1D6FA4]/30">
-            <p className="mono-label text-[#1D6FA4] text-[9px] mb-3">Definition</p>
-            <p className="text-white/80 text-base leading-relaxed">Risk-aware automation characterised by a calibrated balance of human and automated judgment, ensuring that decision-making is optimised for both speed and efficiency and long-term loss-ratio integrity. Autonomy is expanded precisely to the boundary where human judgment adds more value than it costs — and no further.</p>
+          <div className="glass rounded-xl p-6 my-6 border border-[#1D6FA4]/40">
+            <p className="mono-label text-[#60a5fa] text-[9px] mb-3">Definition</p>
+            <p className="text-white text-base leading-relaxed">Risk-aware automation characterised by a calibrated balance of human and automated judgment, ensuring that decision-making is optimised for both speed and efficiency and long-term loss-ratio integrity. Autonomy is expanded precisely to the boundary where human judgment adds more value than it costs — and no further.</p>
           </div>
 
           <p>The most useful strategic frame is the shift from Human-in-the-Loop — where people are embedded in every decision — to Human-on-the-Loop, where people govern, audit, and intervene, but do not execute routine decisions. Across a hypothetical £5bn GWP P&C carrier, this shift implies a structural combined ratio improvement of 8–14 percentage points by 2030.</p>
 
-          {/* Three horizons */}
           <h2 className="font-display text-white text-2xl mt-10 mb-6">Three horizons to Optimal Autonomy</h2>
           <div className="space-y-5">
-            {horizons.map((h, i) => (
-              <div key={h.period} className="glass rounded-2xl p-7" style={{ borderTop: `3px solid ${h.color}`, opacity: 1 - i * 0.05 }}>
+            {horizons.map((h) => (
+              <div key={h.period} className="glass rounded-2xl p-7" style={{ borderTop: `3px solid ${h.color}` }}>
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4">
                   <div>
-                    <p className="mono-label text-[9px] mb-1" style={{ color: h.color }}>{h.period}</p>
+                    <p className="mono-label text-[9px] mb-1" style={{ color: "#60a5fa" }}>{h.period}</p>
                     <p className="font-display text-white text-xl">{h.title}</p>
-                    <p className="text-white/40 text-sm">{h.subtitle}</p>
+                    <p className="text-white/70 text-sm mt-1">{h.subtitle}</p>
                   </div>
                   <div className="glass rounded-lg px-4 py-2 text-right flex-shrink-0">
-                    <p className="font-mono text-sm font-bold" style={{ color: h.color }}>{h.cr}</p>
+                    <p className="font-mono text-sm font-bold" style={{ color: "#60a5fa" }}>{h.cr}</p>
                   </div>
                 </div>
-                <p className="text-white/60 text-sm leading-relaxed mb-5">{h.body}</p>
+                <p className="text-white/85 text-sm leading-relaxed mb-5">{h.body}</p>
                 <div>
-                  <p className="mono-label text-white/25 text-[9px] mb-3">Target KPIs</p>
+                  <p className="mono-label text-white/50 text-[9px] mb-3">Target KPIs</p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {h.kpis.map((kpi) => (
                       <div key={kpi} className="flex gap-2 items-start">
-                        <div className="w-1 h-1 rounded-full mt-1.5 flex-shrink-0" style={{ background: h.color }} />
-                        <p className="text-white/50 text-xs">{kpi}</p>
+                        <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ background: h.color }} />
+                        <p className="text-white/80 text-xs">{kpi}</p>
                       </div>
                     ))}
                   </div>
@@ -237,90 +229,85 @@ export default function OptimalAutonomyArticle() {
 
           <div className="divider-gradient my-10" />
 
-          {/* Peer analysis */}
           <h2 className="font-display text-white text-2xl mt-10 mb-4">Peer analysis — where the leaders stand</h2>
           <p>The following assessment draws on full-year 2025 results and strategy disclosures from AXA, Allianz, Zurich, Chubb, and Aviva. The Evident AI Insurance Index 2025 independently ranks AXA and Allianz as the only two carriers in the top five across all four pillars — against an industry average score of 35.5.</p>
 
           <div className="space-y-4 my-8">
             {peers.map((p) => (
               <div key={p.carrier} className="glass rounded-2xl p-6">
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-4">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-5">
                   <p className="font-display text-white text-xl w-24 flex-shrink-0">{p.carrier}</p>
                   <span
-                    className="mono-label text-[9px] px-3 py-1 rounded-full w-fit"
-                    style={{ color: p.horizonColor, background: p.horizonBg }}
+                    className="mono-label text-[9px] px-3 py-1 rounded-full w-fit font-semibold"
+                    style={{ color: p.horizonColor === "#1D6FA4" ? "#60a5fa" : p.horizonColor === "#3B6D11" ? "#86efac" : "#fbbf24", background: p.horizonBg }}
                   >
                     {p.horizon}
                   </span>
-                  <span className="mono-label text-white/30 text-[9px]">2025 CR: {p.cr}</span>
+                  <span className="mono-label text-white/60 text-[9px]">2025 CR: {p.cr}</span>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                   <div>
-                    <p className="mono-label text-[9px] text-white/25 mb-1">Lead use cases</p>
-                    <p className="text-white/50 text-xs leading-relaxed">{p.useCases}</p>
+                    <p className="mono-label text-[9px] text-white/50 mb-2">Lead use cases</p>
+                    <p className="text-white/85 text-sm leading-relaxed">{p.useCases}</p>
                   </div>
                   <div>
-                    <p className="mono-label text-[9px] text-white/25 mb-1">Strategic moat</p>
-                    <p className="text-white/50 text-xs leading-relaxed">{p.moat}</p>
+                    <p className="mono-label text-[9px] text-white/50 mb-2">Strategic moat</p>
+                    <p className="text-white/85 text-sm leading-relaxed">{p.moat}</p>
                   </div>
                   <div>
-                    <p className="mono-label text-[9px] text-[#E63946]/60 mb-1">Gap / risk</p>
-                    <p className="text-white/50 text-xs leading-relaxed">{p.gap}</p>
+                    <p className="mono-label text-[9px] text-[#E63946] mb-2">Gap / risk</p>
+                    <p className="text-white/85 text-sm leading-relaxed">{p.gap}</p>
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Strategic moats */}
           <h2 className="font-display text-white text-2xl mt-10 mb-4">Three structural moats in the agentic era</h2>
           <p>Raw access to AI models is not a durable competitive advantage — foundational model capabilities are available to all carriers. Three categories of structural moat will determine which carriers emerge as durable leaders.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-8">
             {moats.map((m, i) => (
               <div key={m.title} className="glass rounded-2xl p-6" style={{ borderTop: "3px solid #1D6FA4" }}>
-                <p className="font-mono text-[#1D6FA4]/30 text-2xl font-bold mb-3">{String(i + 1).padStart(2, "0")}</p>
+                <p className="font-mono text-2xl font-bold mb-3" style={{ color: "rgba(96,165,250,0.4)" }}>{String(i + 1).padStart(2, "0")}</p>
                 <p className="font-display text-white text-base mb-3">{m.title}</p>
-                <p className="text-white/50 text-sm leading-relaxed">{m.body}</p>
+                <p className="text-white/80 text-sm leading-relaxed">{m.body}</p>
               </div>
             ))}
           </div>
 
           <div className="divider-gradient my-10" />
 
-          {/* Call to action */}
           <h2 className="font-display text-white text-2xl mt-10 mb-4">Call to action — the next 18 months</h2>
           <p>By the end of 2027, the agentic architecture decisions made today will be embedded in systems, data pipelines, vendor contracts, and organisational structures that are costly and slow to reverse. Three decisions will define competitive position.</p>
 
           <div className="space-y-4 my-8">
             {actions.map((a) => (
               <div key={a.num} className="glass rounded-xl p-6 flex gap-5">
-                <span className="font-mono text-[#1D6FA4]/40 text-2xl font-bold flex-shrink-0">{a.num}</span>
+                <span className="font-mono text-2xl font-bold flex-shrink-0" style={{ color: "rgba(96,165,250,0.4)" }}>{a.num}</span>
                 <div>
                   <p className="font-display text-white text-lg mb-2">{a.title}</p>
-                  <p className="text-white/50 text-sm leading-relaxed">{a.body}</p>
+                  <p className="text-white/80 text-sm leading-relaxed">{a.body}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Imperative box */}
-          <div className="glass rounded-2xl p-8 border border-[#1D6FA4]/40 text-center my-10">
-            <p className="mono-label text-[#1D6FA4] text-[9px] mb-4">The 18-Month Imperative</p>
+          <div className="glass rounded-2xl p-8 border border-[#1D6FA4]/50 text-center my-10">
+            <p className="mono-label text-[#60a5fa] text-[9px] mb-4">The 18-Month Imperative</p>
             <p className="font-display text-white text-xl leading-relaxed">The Autonomy Frontier is being drawn now. The technology is available. The macro tailwinds are present. The regulatory framework, whilst demanding, is knowable and manageable. What separates the leaders from the followers is not capability. It is conviction.</p>
           </div>
 
-          <p className="text-white/25 text-xs leading-relaxed">This Strategic Research Note has been prepared by Eudaimon Consulting, March 2026. Market impact estimates are analytical projections derived from publicly available industry benchmarks and published 2025 annual reports. Carrier assessments are based on public 2025 disclosures only. This note is for general information purposes only and does not constitute investment, legal, or regulatory advice. © 2026 Eudaimon Consulting. All rights reserved.</p>
+          <p className="text-white/40 text-xs leading-relaxed">This Strategic Research Note has been prepared by Eudaimon Consulting, March 2026. Market impact estimates are analytical projections derived from publicly available industry benchmarks and published 2025 annual reports. Carrier assessments are based on public 2025 disclosures only. This note is for general information purposes only and does not constitute investment, legal, or regulatory advice. © 2026 Eudaimon Consulting. All rights reserved.</p>
         </div>
       </article>
 
-      {/* CTA */}
       <section className="py-24 px-6 bg-[#080808]">
         <div className="max-w-3xl mx-auto">
           <div className="divider-gradient mb-16" />
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
             <div>
-              <p className="mono-label text-white/30 text-[9px] mb-2">Defining your autonomy strategy?</p>
+              <p className="mono-label text-white/50 text-[9px] mb-2">Defining your autonomy strategy?</p>
               <p className="font-display text-white text-2xl">Talk to Eudaimon Consulting.</p>
             </div>
             <Link href="/contact" className="group flex items-center gap-2 px-7 py-3.5 bg-[#1D6FA4] text-white rounded-full font-medium hover:bg-[#185FA5] transition-all flex-shrink-0">
