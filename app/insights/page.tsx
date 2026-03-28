@@ -3,17 +3,27 @@ import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const featured = {
-  tag: "AI Risk · Insurance",
-  color: "#E63946",
-  title: "From Cyber Liability to Algorithmic Malpractice: How Insurers Can Underwrite AI Risk in 2026",
+  tag: "Corporate Strategy",
+  color: "#1D6FA4",
+  title: "The Optimal Frontier: Finding the Balance Between Robots and Risk — Redefining Insurance Strategy 2026–2030",
   excerpt:
-    "The insurance industry spent two decades building a playbook for cyber risk. That playbook is now being challenged by AI. The shift is not gradual — it is structural.",
-  readTime: "6 min read",
+    "Carriers that architect toward Optimal Autonomy will structurally reduce combined ratios by 8–15 percentage points by 2030. Those that treat this as another technology upgrade will cede those economics to more decisive competitors.",
+  readTime: "8 min read",
   date: "March 2026",
-  href: "/insights/algorithmic-malpractice",
+  href: "/insights/optimal-autonomy",
 };
 
 const insights = [
+  {
+    tag: "Corporate Strategy",
+    color: "#1D6FA4",
+    title: "The Optimal Frontier: Finding the Balance Between Robots and Risk",
+    excerpt:
+      "Carriers that architect toward Optimal Autonomy will structurally reduce combined ratios by 8–15 percentage points by 2030. A strategic research note for insurance CEOs and Chief Strategy Officers.",
+    readTime: "8 min read",
+    date: "March 2026",
+    href: "/insights/optimal-autonomy",
+  },
   {
     tag: "AI Risk · Insurance",
     color: "#E63946",
@@ -49,7 +59,7 @@ const insights = [
     color: "#1D6FA4",
     title: "Why Most Digital Transformations in Insurance Fail",
     excerpt:
-      "Financial services companies have invested billions in digital transformation. Most have little to show for it. We explore the five structural reasons transformations stall — and how to build a programme that actually scales.",
+      "Financial services companies have invested billions in digital transformation. Most have little to show for it. We explore the five structural reasons transformations stall.",
     readTime: "6 min read",
     date: "November 2024",
     href: "/contact",
@@ -59,7 +69,7 @@ const insights = [
     color: "#F4A01C",
     title: "The Capability Acquisition Playbook",
     excerpt:
-      "In the AI era, the most valuable acquisitions are rarely about scale — they're about acquiring capabilities you cannot build fast enough. We outline a framework for identifying, valuing, and integrating capability-led acquisitions.",
+      "In the AI era, the most valuable acquisitions are rarely about scale — they are about acquiring capabilities you cannot build fast enough.",
     readTime: "7 min read",
     date: "November 2024",
     href: "/contact",
@@ -69,7 +79,7 @@ const insights = [
     color: "#E63946",
     title: "Strategy in the Age of Autonomous Systems",
     excerpt:
-      "When AI systems can make decisions, execute trades, underwrite risks, and serve customers autonomously — what does corporate strategy even mean? A provocation for financial services leaders.",
+      "When AI systems can make decisions, execute trades, underwrite risks, and serve customers autonomously — what does corporate strategy even mean?",
     readTime: "5 min read",
     date: "October 2024",
     href: "/contact",
@@ -91,16 +101,6 @@ const insights = [
     excerpt:
       "ESG is no longer a compliance exercise. It is a strategic imperative. We explore how financial services companies can build genuine ESG strategies that create value and manage risk.",
     readTime: "7 min read",
-    date: "September 2024",
-    href: "/contact",
-  },
-  {
-    tag: "Innovation",
-    color: "#E63946",
-    title: "From Pilot to Platform: Scaling Innovation in Insurance",
-    excerpt:
-      "Launching a proof of concept is easy. Scaling it is hard. Most insurers are drowning in pilots that never achieve commercial relevance.",
-    readTime: "5 min read",
     date: "September 2024",
     href: "/contact",
   },
