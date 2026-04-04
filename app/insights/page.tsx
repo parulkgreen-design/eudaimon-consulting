@@ -3,17 +3,27 @@ import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const featured = {
-  tag: "Corporate Strategy",
-  color: "#1D6FA4",
-  title: "The Optimal Frontier: Finding the Balance Between Robots and Risk — Redefining Insurance Strategy 2026–2030",
+  tag: "AI Strategy",
+  color: "#E63946",
+  title: "Who Controls the Customer? AI Chatbots and the Future of Insurance Distribution",
   excerpt:
-    "Carriers that architect toward Optimal Autonomy will structurally reduce combined ratios by 8–15 percentage points by 2030. Those that treat this as another technology upgrade will cede those economics to more decisive competitors.",
-  readTime: "8 min read",
-  date: "March 2026",
-  href: "/insights/optimal-autonomy",
+    "AI chatbots are not a new customer service channel. They are a new distribution front-end that routes customers toward insurance products without the insurer's involvement. Whoever owns that interface controls discovery, comparison, and increasingly conversion.",
+  readTime: "7 min read",
+  date: "April 2026",
+  href: "/insights/ai-distribution",
 };
 
 const insights = [
+  {
+    tag: "AI Strategy",
+    color: "#E63946",
+    title: "Who Controls the Customer? AI Chatbots and the Future of Insurance Distribution",
+    excerpt:
+      "AI chatbots are not a new customer service channel. They are a new distribution front-end that routes customers toward insurance products without the insurer's involvement.",
+    readTime: "7 min read",
+    date: "April 2026",
+    href: "/insights/ai-distribution",
+  },
   {
     tag: "Corporate Strategy",
     color: "#1D6FA4",
@@ -81,16 +91,6 @@ const insights = [
     excerpt:
       "When AI systems can make decisions, execute trades, underwrite risks, and serve customers autonomously — what does corporate strategy even mean?",
     readTime: "5 min read",
-    date: "October 2024",
-    href: "/contact",
-  },
-  {
-    tag: "Technology Partnerships",
-    color: "#1D6FA4",
-    title: "Why Technology Partnerships Matter More Than Ever",
-    excerpt:
-      "The days of building everything in-house are over. Financial services companies that master the art of technology partnership will outcompete those that don't.",
-    readTime: "6 min read",
     date: "October 2024",
     href: "/contact",
   },
