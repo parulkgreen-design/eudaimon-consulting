@@ -3,17 +3,27 @@ import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const featured = {
-  tag: "AI Strategy",
-  color: "#E63946",
-  title: "Who Controls the Customer? AI Chatbots and the Future of Insurance Distribution",
+  tag: "Corporate Strategy",
+  color: "#1D6FA4",
+  title: "Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Insurance",
   excerpt:
-    "AI chatbots are not a new customer service channel. They are a new distribution front-end that routes customers toward insurance products without the insurer's involvement. Whoever owns that interface controls discovery, comparison, and increasingly conversion.",
-  readTime: "7 min read",
+    "Between 2020 and 2026, the specialty insurance market has been tested by four distinct macro-level shocks — the most consequential six-year period since the post-September 2001 market reset. And the Strait of Hormuz crisis is not over yet.",
+  readTime: "8 min read",
   date: "April 2026",
-  href: "/insights/ai-distribution",
+  href: "/insights/specialty-insurance",
 };
 
 const insights = [
+  {
+    tag: "Corporate Strategy",
+    color: "#1D6FA4",
+    title: "Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Insurance",
+    excerpt:
+      "Between 2020 and 2026, the specialty insurance market has been tested by four distinct macro-level shocks — the most consequential six-year period since the post-September 2001 market reset.",
+    readTime: "8 min read",
+    date: "April 2026",
+    href: "/insights/specialty-insurance",
+  },
   {
     tag: "AI Strategy",
     color: "#E63946",
@@ -82,16 +92,6 @@ const insights = [
       "In the AI era, the most valuable acquisitions are rarely about scale — they are about acquiring capabilities you cannot build fast enough.",
     readTime: "7 min read",
     date: "November 2024",
-    href: "/contact",
-  },
-  {
-    tag: "Corporate Strategy",
-    color: "#E63946",
-    title: "Strategy in the Age of Autonomous Systems",
-    excerpt:
-      "When AI systems can make decisions, execute trades, underwrite risks, and serve customers autonomously — what does corporate strategy even mean?",
-    readTime: "5 min read",
-    date: "October 2024",
     href: "/contact",
   },
   {
