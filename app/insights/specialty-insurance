@@ -118,7 +118,7 @@ export default function SpecialtyReinsuranceArticle() {
             </div>
           </div>
           <h1 className="font-display text-white text-4xl md:text-5xl leading-tight mb-8">
-            Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Reinsurance
+            Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Insurance
           </h1>
           <p className="text-white text-xl leading-relaxed border-l-2 border-[#1D6FA4] pl-5">
             Between 2020 and 2026, the specialty reinsurance market has been tested by four distinct macro-level shocks. Together, they constitute the most consequential six-year period for specialty risk since the post-September 2001 market reset — and the Strait of Hormuz crisis is not over yet.
@@ -128,7 +128,7 @@ export default function SpecialtyReinsuranceArticle() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
                 { label: "Published", val: "April 2026" },
-                { label: "Coverage", val: "Global Specialty Reinsurance" },
+                { label: "Coverage", val: "Global Specialty Insurance" },
                 { label: "Focus", val: "Marine, Aviation, Property, Casualty" },
                 { label: "Format", val: "Executive Research Note" },
               ].map((m) => (
