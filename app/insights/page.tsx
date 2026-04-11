@@ -5,25 +5,23 @@ import AnimatedSection from "@/components/AnimatedSection";
 const featured = {
   tag: "Corporate Strategy",
   color: "#1D6FA4",
-  title: "Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Insurance",
-  excerpt:
-    "Between 2020 and 2026, the specialty insurance market has been tested by four distinct macro-level shocks — the most consequential six-year period since the post-September 2001 market reset. And the Strait of Hormuz crisis is not over yet.",
+  title: "Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Reinsurance",
+  excerpt: "Between 2020 and 2026, the specialty reinsurance market has been tested by four distinct macro-level shocks — the most consequential six-year period since the post-September 2001 market reset.",
   readTime: "8 min read",
   date: "April 2026",
-  href: "/insights/specialty-insurance",
+  href: "/insights/specialty-reinsurance",
 };
 
 const insights = [
-  {
-    tag: "Corporate Strategy",
-    color: "#1D6FA4",
-    title: "Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Insurance",
-    excerpt:
-      "Between 2020 and 2026, the specialty insurance market has been tested by four distinct macro-level shocks — the most consequential six-year period since the post-September 2001 market reset.",
-    readTime: "8 min read",
-    date: "April 2026",
-    href: "/insights/specialty-insurance",
-  },
+{
+  tag: "Corporate Strategy",
+  color: "#1D6FA4",
+  title: "Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Reinsurance",
+  excerpt: "Between 2020 and 2026, the specialty reinsurance market has been tested by four distinct macro-level shocks — the most consequential six-year period since the post-September 2001 market reset.",
+  readTime: "8 min read",
+  date: "April 2026",
+  href: "/insights/specialty-reinsurance",
+},
   {
     tag: "AI Strategy",
     color: "#E63946",
@@ -92,6 +90,16 @@ const insights = [
       "In the AI era, the most valuable acquisitions are rarely about scale — they are about acquiring capabilities you cannot build fast enough.",
     readTime: "7 min read",
     date: "November 2024",
+    href: "/contact",
+  },
+  {
+    tag: "Corporate Strategy",
+    color: "#E63946",
+    title: "Strategy in the Age of Autonomous Systems",
+    excerpt:
+      "When AI systems can make decisions, execute trades, underwrite risks, and serve customers autonomously — what does corporate strategy even mean?",
+    readTime: "5 min read",
+    date: "October 2024",
     href: "/contact",
   },
   {
