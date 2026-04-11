@@ -90,6 +90,16 @@ export default function SpecialtyReinsuranceArticle() {
     { line: "Marine war — Strait of Hormuz (2026)", change: "3.5–10% of vessel value per transit", color: "#E63946", pct: 100 },
   ];
 
+  const structuralVsCyclical = [
+    { perm: "Pandemic / communicable disease exclusions in BI", cycle: "COVID-19 specialty pricing premium (normalised by 2022–23)" },
+    { perm: "Aviation: dual-flag risk scrutiny, sanctions-list alignment", cycle: "Marine war listed-area pricing (reviewed post-conflict)" },
+    { perm: "Cyber: state-sponsored attack exclusions (March 2023)", cycle: "Trade credit capacity for conflict zones (returns when geopolitics normalise)" },
+    { perm: "Marine: choke-point risk permanently repriced post-Red Sea", cycle: "Property cat rate premium (moderated 2024–25 but floor higher than pre-2020)" },
+    { perm: "P&I 72-hour war cancellation clauses now assumed standard", cycle: "Traffic diversion costs via Cape of Good Hope (normalise with resolution)" },
+    { perm: "Inflation indexation clauses in property policies", cycle: "Capital squeeze from rate shock (partially reversed as rates rose)" },
+    { perm: "US social inflation in casualty: structural and unresolved", cycle: "Investment portfolio mark-to-market losses (recovered as rates stabilised)" },
+  ];
+
   const conclusions = [
     { num: "01", title: "Pandemic exclusions are permanent", body: "Communicable disease exclusions are now standard in commercial BI across the US, UK, and EU. Pandemic risk has left the private insurance market. This is not a temporary pricing adjustment." },
     { num: "02", title: "Aviation war underwriting has been fundamentally reformed", body: "Dual-flag risk scrutiny, sanctions-list alignment, and lessor-operator-registrar analysis are now embedded in underwriting practice. The June 2025 High Court judgment sets precedents that will shape future disputes." },
@@ -100,7 +110,6 @@ export default function SpecialtyReinsuranceArticle() {
 
   return (
     <div className="bg-[#0a0a0a] min-h-screen">
-      {/* Hero */}
       <section className="relative pt-40 pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 right-[10%] w-[600px] h-[600px] rounded-full blur-[160px] opacity-10" style={{ background: "radial-gradient(circle, rgba(133,79,11,0.8) 0%, transparent 70%)" }} />
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
@@ -123,7 +132,6 @@ export default function SpecialtyReinsuranceArticle() {
           <p className="text-white text-xl leading-relaxed border-l-2 border-[#1D6FA4] pl-5">
             Between 2020 and 2026, the specialty reinsurance market has been tested by four distinct macro-level shocks. Together, they constitute the most consequential six-year period for specialty risk since the post-September 2001 market reset — and the Strait of Hormuz crisis is not over yet.
           </p>
-          {/* Byline */}
           <div style={{ ...cardStyle, marginTop: "32px", padding: "20px 24px" }}>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
@@ -147,26 +155,17 @@ export default function SpecialtyReinsuranceArticle() {
       <article className="py-16 px-6">
         <div className="max-w-3xl mx-auto space-y-8 text-white text-base leading-relaxed">
 
-          {/* Intro */}
           <h2 className="font-display text-white text-2xl mt-2 mb-4">A market stress-tested beyond precedent</h2>
           <p style={{ opacity: 0.9 }}>No six-year period in the modern insurance era has produced four distinct macro-level shocks, each operating through a different mechanism, each affecting different lines of business, and each demanding a structural market response. Yet that is precisely what the specialty reinsurance market has navigated between 2020 and 2026.</p>
           <p style={{ opacity: 0.9 }}>COVID-19 demonstrated the limits of systemic risk coverage. The Russia-Ukraine war exposed structural vulnerabilities in aviation war underwriting and drove a generation-defining repricing cycle. The inflation and interest rate shock corrected years of inadequate pricing while leaving unresolved structural challenges in casualty reserves. And the Strait of Hormuz crisis — the most acute current dislocation — is now testing whether the private insurance market can provide meaningful coverage for geopolitical risk in the world's most critical energy corridor.</p>
           <p style={{ opacity: 0.9 }}>The immediate trigger for this note is the developing Hormuz crisis. Since late February 2026, following US and Israeli military strikes on Iran, the Islamic Revolutionary Guard Corps has imposed effective control over the strait. The IRGC has conducted over 21 confirmed attacks on merchant ships, laid sea mines, and introduced a transit clearance regime charging up to $2 million per tanker — payable in Chinese yuan or cryptocurrency, bypassing the dollar-based financial system. Ship traffic has fallen from over 100 vessels per day to approximately 10. The IEA estimates that approximately 20 million barrels per day of oil supply — roughly one-fifth of global consumption — has been disrupted. The insurance market response has been the most severe since the Iran-Iraq Tanker War of the 1980s.</p>
 
-          {/* Pull quote */}
           <div className="py-8 my-8" style={{ borderTop: "2px solid #1D6FA4", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
             <p className="font-display text-white text-xl italic leading-relaxed">"The Hormuz crisis is not a tail event that will pass without consequence. It is the latest — and currently the most severe — demonstration that the boundary between private insurance and state-backed risk management is shifting."</p>
           </div>
 
-          {/* Four shocks */}
           <h2 className="font-display text-white text-2xl mt-10 mb-4">The four shocks — a structured comparison</h2>
           <p style={{ opacity: 0.9 }}>Each shock arrived with limited precedent in the modern insurance era. Each generated fundamental debates about policy wording, coverage scope, and claims settlement. Each produced a repricing response that, cumulatively, contributed to the hardest specialty reinsurance market of the past 25 years. The critical insight is that they are not independent episodes — they are cumulative, compounding events that have permanently shifted the operating environment.</p>
-
-          {/* [VISUAL SUGGESTION: 2×2 matrix diagram — x-axis: Geographic Concentration (narrow to broad), y-axis: Structural vs Cyclical Impact. COVID-19 top-left (broad, structural), Russia-Ukraine bottom-right (narrow, structural), Inflation top-right (broad, cyclical), Red Sea/Hormuz bottom-left (narrow, structural)] */}
-          <div style={{ ...cardStyle, background: "rgba(29,111,164,0.08)", border: "1px solid rgba(29,111,164,0.3)", padding: "16px 20px" }}>
-            <p className="mono-label text-[9px] mb-1" style={{ color: "#60a5fa" }}>Visual suggestion</p>
-            <p className="text-white text-xs" style={{ opacity: 0.7 }}>2×2 matrix: x-axis Geographic Concentration (narrow → broad), y-axis Structural vs Cyclical impact. COVID-19: broad/structural. Russia-Ukraine: narrow/structural. Inflation: broad/cyclical. Red Sea/Hormuz: narrow/structural.</p>
-          </div>
 
           <div className="space-y-5 mt-6">
             {shocks.map((s) => (
@@ -195,15 +194,8 @@ export default function SpecialtyReinsuranceArticle() {
             ))}
           </div>
 
-          {/* Rate changes chart */}
           <h2 className="font-display text-white text-2xl mt-10 mb-4">The cumulative repricing — six years in numbers</h2>
           <p style={{ opacity: 0.9 }}>The rate changes produced by these four shocks are not comparable to a normal market cycle. The January 2023 renewal season was described as the hardest in a generation by every major market analyst. Marine war pricing for Hormuz transits now represents a fundamentally different order of magnitude from pre-crisis baselines.</p>
-
-          {/* [VISUAL SUGGESTION: Horizontal bar chart showing rate changes by line/period, with bars indexed to pre-shock baseline of 100. Red Sea and Hormuz bars would extend dramatically beyond the others, illustrating the severity of the current dislocation.] */}
-          <div style={{ ...cardStyle, background: "rgba(29,111,164,0.08)", border: "1px solid rgba(29,111,164,0.3)", padding: "16px 20px", marginBottom: "16px" }}>
-            <p className="mono-label text-[9px] mb-1" style={{ color: "#60a5fa" }}>Visual suggestion</p>
-            <p className="text-white text-xs" style={{ opacity: 0.7 }}>Horizontal bar chart: rate changes by line and period, indexed to pre-shock baseline. Red Sea and Hormuz bars extend dramatically further than others, visually representing the severity of the current dislocation vs prior shocks.</p>
-          </div>
 
           <div style={{ ...cardStyle, padding: 0, overflow: "hidden" }}>
             <div style={{ background: "rgba(255,255,255,0.1)", padding: "10px 16px", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
@@ -222,15 +214,14 @@ export default function SpecialtyReinsuranceArticle() {
             ))}
           </div>
 
-          {/* Hormuz deep dive */}
           <h2 className="font-display text-white text-2xl mt-10 mb-4">The Hormuz crisis — why this one is different</h2>
           <p style={{ opacity: 0.9 }}>The Strait of Hormuz crisis is qualitatively more severe than the Red Sea disruption for three structural reasons that underwriters, boards, and risk managers must understand clearly.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
             {[
-              { num: "01", title: "Scale of trade affected", body: "The Hormuz strait carries approximately 20 million barrels of oil per day — roughly one-fifth of global consumption. The Red Sea disruption, severe as it was, allowed diversion via the Cape of Good Hope. There is no alternative routing for Hormuz. Disruption here is irreversible until the political situation resolves." },
-              { num: "02", title: "Deliberateness of the mechanism", body: "The IRGC's use of mines, a structured transit clearance regime, and tolls payable in non-dollar currencies represents a more deliberate and durable mechanism of control than Houthi attacks. This is state-level architecture for controlling a global chokepoint, not an opportunistic insurgency." },
-              { num: "03", title: "Complexity of the resolution pathway", body: "The Red Sea crisis required a single diplomatic track. Hormuz resolution requires a broader US-Iran-Gulf state framework involving multiple actors with divergent interests. The timeline for resolution is materially more uncertain — and insurance markets cannot sustain indefinite withdrawal of cover." },
+              { num: "01", title: "Scale of trade affected", body: "The Hormuz strait carries approximately 20 million barrels of oil per day — roughly one-fifth of global consumption. There is no alternative routing for Hormuz. Disruption here is irreversible until the political situation resolves." },
+              { num: "02", title: "Deliberateness of the mechanism", body: "The IRGC's use of mines, a structured transit clearance regime, and tolls payable in non-dollar currencies represents a more deliberate and durable mechanism of control than Houthi attacks. This is state-level architecture for controlling a global chokepoint." },
+              { num: "03", title: "Complexity of the resolution pathway", body: "Hormuz resolution requires a broader US-Iran-Gulf state framework involving multiple actors with divergent interests. The timeline for resolution is materially more uncertain — and insurance markets cannot sustain indefinite withdrawal of cover." },
             ].map((c) => (
               <div key={c.num} style={{ ...cardStyle, borderTop: "3px solid #1D6FA4" }}>
                 <p className="font-mono text-2xl font-bold mb-3" style={{ color: "rgba(96,165,250,0.3)" }}>{c.num}</p>
@@ -240,22 +231,15 @@ export default function SpecialtyReinsuranceArticle() {
             ))}
           </div>
 
-          <p className="mt-6" style={{ opacity: 0.9 }}>The market's response has reached a boundary rarely seen in peacetime commercial insurance: many underwriters declined to offer Hormuz cover at any price. The Lloyd's JWC designated the entire Arabian Gulf as a conflict zone. All 12 International Group P&I clubs issued 72-hour war cover cancellation notices simultaneously — the most significant collective P&I market action since the 1980s. Whether the crisis resolves within three months or extends beyond six will determine whether these responses remain cyclical or become the structural new normal for energy insurance.</p>
+          <p className="mt-6" style={{ opacity: 0.9 }}>The market's response has reached a boundary rarely seen in peacetime commercial insurance: many underwriters declined to offer Hormuz cover at any price. The Lloyd's JWC designated the entire Arabian Gulf as a conflict zone. All 12 International Group P&I clubs issued 72-hour war cover cancellation notices simultaneously — the most significant collective P&I market action since the 1980s.</p>
 
           <div style={{ ...cardStyle, borderLeft: "4px solid #1D6FA4", padding: "20px 24px", marginTop: "16px" }}>
             <p className="mono-label text-[9px] mb-3" style={{ color: "#60a5fa" }}>Forward scenario</p>
-            <p className="text-white text-sm leading-relaxed font-medium">If the crisis resolves within 3 months: Arabian Gulf transit premiums will remain at 1–3% of vessel value for 12–24 months. JWC designation will remain in place through any ceasefire monitoring period. If the crisis extends beyond 6 months: expect formal restructuring of energy insurance programmes by major oil companies, expansion of government-backed war risk schemes, and sustained reduction in private reinsurance capacity for energy-related marine war risk — comparable to the structural changes that followed the Iran-Iraq Tanker War.</p>
+            <p className="text-white text-sm leading-relaxed font-medium">If the crisis resolves within 3 months: Arabian Gulf transit premiums will remain at 1–3% of vessel value for 12–24 months. If the crisis extends beyond 6 months: expect formal restructuring of energy insurance programmes by major oil companies, expansion of government-backed war risk schemes, and sustained reduction in private reinsurance capacity for energy-related marine war risk — comparable to the structural changes that followed the Iran-Iraq Tanker War.</p>
           </div>
 
-          {/* Structural vs cyclical */}
           <h2 className="font-display text-white text-2xl mt-10 mb-4">What is permanent and what will pass</h2>
           <p style={{ opacity: 0.9 }}>The most important strategic question for insurance leadership is not how severe the current dislocation is, but how much of it represents a permanent narrowing of coverage scope versus a cyclical pricing premium that will eventually moderate. The evidence across all four shocks points to a clear pattern: event-driven shocks produce both structural exclusions and cyclical pricing effects, but the structural exclusions do not reverse.</p>
-
-          {/* [VISUAL SUGGESTION: Two-column table with "Structural (Permanent)" vs "Cyclical (Will Moderate)" items from each shock — use red/green colour coding to make the distinction immediately visual.] */}
-          <div style={{ ...cardStyle, background: "rgba(29,111,164,0.08)", border: "1px solid rgba(29,111,164,0.3)", padding: "16px 20px", marginBottom: "16px" }}>
-            <p className="mono-label text-[9px] mb-1" style={{ color: "#60a5fa" }}>Visual suggestion</p>
-            <p className="text-white text-xs" style={{ opacity: 0.7 }}>Two-column comparison table: "Permanent structural changes" (red) vs "Cyclical effects that will moderate" (green) for each of the four shocks — making the structural vs cyclical distinction visually immediate for board presentations.</p>
-          </div>
 
           <div style={{ ...cardStyle, padding: 0, overflow: "hidden" }}>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", background: "rgba(255,255,255,0.1)", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
@@ -266,15 +250,7 @@ export default function SpecialtyReinsuranceArticle() {
                 <p className="mono-label text-[9px]" style={{ color: "#86efac" }}>Cyclical — will moderate</p>
               </div>
             </div>
-            {[
-              { perm: "Pandemic / communicable disease exclusions in BI", cycle: "COVID-19 specialty pricing premium (normalised by 2022–23)" },
-              { perm: "Aviation: dual-flag risk scrutiny, sanctions-list alignment", cycle: "Marine war listed-area pricing (reviewed post-conflict)" },
-              { perm: "Cyber: state-sponsored attack exclusions (March 2023)", cycle: "Trade credit capacity for conflict zones (returns when geopolitics normalise)" },
-              { perm: "Marine: choke-point risk permanently repriced post-Red Sea", cycle: "Property cat rate premium (moderated 2024–25 but floor higher than pre-2020)" },
-              { perm: "P&I 72-hour war cancellation clauses now assumed standard", cycle: "Traffic diversion costs via Cape of Good Hope (normalise with resolution)" },
-              { perm: "Inflation indexation clauses in property policies", cycle: "Capital squeeze from rate shock (partially reversed as rates rose)" },
-              { perm: "US social inflation in casualty: structural and unresolved", cycle: "Investment portfolio mark-to-market losses (recovered as rates stabilised)" },
-            ].map((row, i) => (
+            {structuralVsCyclical.map((row, i) => (
               <div key={row.perm} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", borderBottom: "1px solid rgba(255,255,255,0.06)", background: i % 2 === 0 ? "rgba(255,255,255,0.02)" : "transparent" }}>
                 <div style={{ padding: "10px 16px", borderRight: "1px solid rgba(255,255,255,0.08)" }}>
                   <p className="text-white text-xs leading-relaxed" style={{ opacity: 0.9 }}>{row.perm}</p>
@@ -286,7 +262,6 @@ export default function SpecialtyReinsuranceArticle() {
             ))}
           </div>
 
-          {/* Strategic implications */}
           <h2 className="font-display text-white text-2xl mt-10 mb-4">Strategic implications by audience</h2>
           <p style={{ opacity: 0.9 }}>The response to these shocks cannot be uniform. Insurers and reinsurers, brokers, and corporate buyers each face materially different exposures and require different strategic actions. The implications below are prioritised for the immediate operating environment, with the Hormuz crisis as the primary near-term concern.</p>
 
@@ -309,7 +284,6 @@ export default function SpecialtyReinsuranceArticle() {
             ))}
           </div>
 
-          {/* Conclusions */}
           <h2 className="font-display text-white text-2xl mt-10 mb-4">Five conclusions for market leadership</h2>
           <div className="space-y-4 mt-4">
             {conclusions.map((c) => (
@@ -323,23 +297,20 @@ export default function SpecialtyReinsuranceArticle() {
             ))}
           </div>
 
-          {/* Closing box */}
           <div style={{ ...cardStyle, borderLeft: "4px solid #1D6FA4", marginTop: "32px" }}>
             <p className="mono-label text-[9px] mb-3" style={{ color: "#60a5fa" }}>The strategic imperative</p>
             <p className="text-white text-lg font-medium leading-relaxed">The organisations that navigate the next decade successfully will be those that maintain underwriting discipline through the full cycle, invest in precise policy language and coverage clarity, build scenario-based capital planning that encompasses geopolitical risk, and develop the relationships and capabilities needed to access government-backed risk transfer mechanisms when private capacity reaches its limits. The question for CEOs, CUOs, and Chief Strategy Officers is not whether the boundary between private insurance and state-backed risk management will move further. It is how quickly they will adapt their businesses to operate effectively on both sides of it.</p>
           </div>
 
-          {/* Disclaimer and sources */}
           <div style={{ marginTop: "48px", paddingTop: "24px", borderTop: "1px solid rgba(255,255,255,0.1)" }}>
             <p className="mono-label text-white/40 text-[9px] mb-3">Disclaimer</p>
             <p className="text-white/40 text-xs leading-relaxed italic">This research note is prepared for strategic decision-making and general information purposes only. Data is drawn from publicly available sources. All estimates and ranges reflect the state of information available in April 2026. This note does not constitute financial, legal, regulatory, or investment advice. Market projections represent analytical assessments derived from cited public sources and carry inherent uncertainty. Regulatory frameworks vary by jurisdiction — independent professional advice should be obtained before implementing strategic changes. © 2026 Eudaimon Consulting. All rights reserved.</p>
             <p className="mono-label text-white/40 text-[9px] mb-3 mt-6">Data sources and references</p>
-            <p className="text-white/40 text-xs leading-relaxed italic">Lloyd's of London — COVID-19 total loss estimates, results 2020–2023, JWC zone designations, LMA market guidance; Swiss Re Institute (Sigma) — COVID-19 reserves and loss data, January 2021 renewal pricing, P&C sigma research 2021–2025; Munich Re — Russia-Ukraine specialty reserves, P&C reinsurance combined ratio data 2022–2023; Howden Re and Gallagher Re — January 2023 renewal rate data, capital erosion statistics, retro and D&F pricing ranges; OECD (October 2022) — Russia-Ukraine war impact on insurance markets; IEA — Strait of Hormuz oil supply disruption data, 20 million barrels/day estimate; S&P Global and Carrier Management — Russia-Ukraine total industry loss estimates ($16–35bn), Red Sea insurance data; Kpler (November 2025) — Red Sea maritime insurance market analysis and long-term pricing trajectory; UK High Court (June 2025) — landmark judgment in Russian aircraft lessor claims, AerCap and other lessors versus insurance market; Artemis.bm — January 2023 renewal rate data, ILS and retro market analysis; Dallas Federal Reserve (March 2026) — economic analysis of Strait of Hormuz closure impact; CNN Business, CBS News, and S&P Global (2026) — real-time reporting on Strait of Hormuz crisis and insurance market response.</p>
+            <p className="text-white/40 text-xs leading-relaxed italic">Lloyd's of London — COVID-19 total loss estimates, results 2020–2023, JWC zone designations, LMA market guidance; Swiss Re Institute (Sigma) — COVID-19 reserves and loss data, January 2021 renewal pricing, P&C sigma research 2021–2025; Munich Re — Russia-Ukraine specialty reserves, P&C reinsurance combined ratio data 2022–2023; Howden Re and Gallagher Re — January 2023 renewal rate data, capital erosion statistics, retro and D&F pricing ranges; OECD (October 2022) — Russia-Ukraine war impact on insurance markets; IEA — Strait of Hormuz oil supply disruption data, 20 million barrels/day estimate; S&P Global and Carrier Management — Russia-Ukraine total industry loss estimates ($16–35bn), Red Sea insurance data; Kpler (November 2025) — Red Sea maritime insurance market analysis and long-term pricing trajectory; UK High Court (June 2025) — landmark judgment in Russian aircraft lessor claims; Artemis.bm — January 2023 renewal rate data, ILS and retro market analysis; Dallas Federal Reserve (March 2026) — economic analysis of Strait of Hormuz closure impact; CNN Business, CBS News, and S&P Global (2026) — real-time reporting on Strait of Hormuz crisis and insurance market response.</p>
           </div>
         </div>
       </article>
 
-      {/* CTA */}
       <section className="py-24 px-6 bg-[#080808]">
         <div className="max-w-3xl mx-auto">
           <div className="divider-gradient mb-16" />
