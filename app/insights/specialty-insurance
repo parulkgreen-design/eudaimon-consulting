@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Clock, ChevronLeft } from "lucide-react";
 
-export default function SpecialtyReinsuranceArticle() {
+export default function SpecialtyInsuranceArticle() {
 
   const cardStyle = {
     background: "rgba(255,255,255,0.08)",
