@@ -3,25 +3,36 @@ import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const featured = {
-  tag: "Corporate Strategy",
-  color: "#1D6FA4",
-  title: "Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Reinsurance",
-  excerpt: "Between 2020 and 2026, the specialty reinsurance market has been tested by four distinct macro-level shocks — the most consequential six-year period since the post-September 2001 market reset.",
+  tag: "Cyber Underwriting",
+  color: "#E63946",
+  title: "Same Attacks, Bigger Consequences: How AI Is Reshaping Cyber Risk for Insurers",
+  excerpt:
+    "Cyber attacks have not changed in nature — stolen credentials and unpatched systems still dominate loss data. What has changed is the economics. AI and automation are reshaping frequency, severity and correlation in ways that current underwriting models were not built to handle.",
   readTime: "8 min read",
   date: "April 2026",
-  href: "/insights/specialty-reinsurance",
+  href: "/insights/cyber-risk-ai",
 };
 
 const insights = [
-{
-  tag: "Corporate Strategy",
-  color: "#1D6FA4",
-  title: "Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Reinsurance",
-  excerpt: "Between 2020 and 2026, the specialty reinsurance market has been tested by four distinct macro-level shocks — the most consequential six-year period since the post-September 2001 market reset.",
-  readTime: "8 min read",
-  date: "April 2026",
-  href: "/insights/specialty-reinsurance",
-},
+  {
+    tag: "Cyber Underwriting",
+    color: "#E63946",
+    title: "Same Attacks, Bigger Consequences: How AI Is Reshaping Cyber Risk for Insurers",
+    excerpt:
+      "Cyber attacks have not changed in nature — stolen credentials and unpatched systems still dominate loss data. What has changed is the economics. AI and automation are reshaping frequency, severity and correlation in ways that current underwriting models were not built to handle.",
+    readTime: "8 min read",
+    date: "April 2026",
+    href: "/insights/cyber-risk-ai",
+  },
+  {
+    tag: "Corporate Strategy",
+    color: "#1D6FA4",
+    title: "Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Reinsurance",
+    excerpt: "Between 2020 and 2026, the specialty reinsurance market has been tested by four distinct macro-level shocks — the most consequential six-year period since the post-September 2001 market reset.",
+    readTime: "8 min read",
+    date: "April 2026",
+    href: "/insights/specialty-reinsurance",
+  },
   {
     tag: "AI Strategy",
     color: "#E63946",
