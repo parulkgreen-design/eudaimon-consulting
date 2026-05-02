@@ -3,32 +3,33 @@ import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const featured = {
-  tag: "Cyber Underwriting",
-  color: "#E63946",
-  title: "Same Attacks, Bigger Consequences: How AI Is Reshaping Cyber Risk for Insurers",
+  tag: "Corporate Strategy",
+  color: "#1D6FA4",
+  title: "Alternative Capital in Global Insurance and Reinsurance: Evolution, Current State, and Market Impact — 2005 to 2026",
   excerpt:
-    "Cyber attacks have not changed in nature — stolen credentials and unpatched systems still dominate loss data. What has changed is the economics. AI and automation are reshaping frequency, severity and correlation in ways that current underwriting models were not built to handle.",
-  readTime: "8 min read",
-  date: "April 2026",
-  href: "/insights/cyber-risk-ai",
+    "Alternative capital grew from under $20bn in 2005 to $136bn by year-end 2025. The soft market is no longer a risk scenario — it is the current reality. The strategic question is how long it runs, how deep it goes, and who is positioned to manage through it.",
+  readTime: "9 min read",
+  date: "May 2026",
+  href: "/insights/alternative-capital",
 };
 
 const insights = [
   {
-    tag: "Cyber Underwriting",
-    color: "#E63946",
-    title: "Same Attacks, Bigger Consequences: How AI Is Reshaping Cyber Risk for Insurers",
+    tag: "Corporate Strategy",
+    color: "#1D6FA4",
+    title: "Alternative Capital in Global Insurance and Reinsurance: Evolution, Current State, and Market Impact — 2005 to 2026",
     excerpt:
-      "Cyber attacks have not changed in nature — stolen credentials and unpatched systems still dominate loss data. What has changed is the economics. AI and automation are reshaping frequency, severity and correlation in ways that current underwriting models were not built to handle.",
-    readTime: "8 min read",
-    date: "April 2026",
-    href: "/insights/cyber-risk-ai",
+      "Alternative capital grew from under $20bn in 2005 to $136bn by year-end 2025. The soft market is no longer a risk scenario — it is the current reality.",
+    readTime: "9 min read",
+    date: "May 2026",
+    href: "/insights/alternative-capital",
   },
   {
     tag: "Corporate Strategy",
     color: "#1D6FA4",
     title: "Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Reinsurance",
-    excerpt: "Between 2020 and 2026, the specialty reinsurance market has been tested by four distinct macro-level shocks — the most consequential six-year period since the post-September 2001 market reset.",
+    excerpt:
+      "Between 2020 and 2026, the specialty reinsurance market has been tested by four distinct macro-level shocks — the most consequential six-year period since the post-September 2001 market reset.",
     readTime: "8 min read",
     date: "April 2026",
     href: "/insights/specialty-reinsurance",
@@ -91,26 +92,6 @@ const insights = [
       "Financial services companies have invested billions in digital transformation. Most have little to show for it. We explore the five structural reasons transformations stall.",
     readTime: "6 min read",
     date: "November 2024",
-    href: "/contact",
-  },
-  {
-    tag: "M&A",
-    color: "#F4A01C",
-    title: "The Capability Acquisition Playbook",
-    excerpt:
-      "In the AI era, the most valuable acquisitions are rarely about scale — they are about acquiring capabilities you cannot build fast enough.",
-    readTime: "7 min read",
-    date: "November 2024",
-    href: "/contact",
-  },
-  {
-    tag: "Corporate Strategy",
-    color: "#E63946",
-    title: "Strategy in the Age of Autonomous Systems",
-    excerpt:
-      "When AI systems can make decisions, execute trades, underwrite risks, and serve customers autonomously — what does corporate strategy even mean?",
-    readTime: "5 min read",
-    date: "October 2024",
     href: "/contact",
   },
   {
