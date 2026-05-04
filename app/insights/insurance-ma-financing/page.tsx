@@ -1,3 +1,19 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "How Insurance Giants Finance Mega-Deals: The Zurich/Beazley Playbook",
+  description: "Four landmark deals. Four different financing approaches. One unifying insight: the quality of the target determines the structure of the deal. A strategic analysis of how major insurers finance large-scale acquisitions.",
+  openGraph: {
+    title: "How Insurance Giants Finance Mega-Deals: The Zurich/Beazley Playbook",
+    description: "Four landmark deals. Four different financing approaches. One unifying insight: the quality of the target determines the structure of the deal.",
+    url: "https://www.eudaimonconsulting.com/insights/insurance-ma-financing",
+    type: "article",
+    images: [{ url: "/assets/logo.jpg" }],
+  },
+  alternates: {
+    canonical: "https://www.eudaimonconsulting.com/insights/insurance-ma-financing",
+  },
+};
 import Link from "next/link";
 import { ArrowRight, Clock, ChevronLeft } from "lucide-react";
 
