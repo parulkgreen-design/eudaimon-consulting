@@ -1,3 +1,19 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Alternative Capital in Global Insurance and Reinsurance: Evolution, Current State, and Market Impact — 2005 to 2026",
+  description: "Alternative capital grew from under $20bn in 2005 to $136bn by end-2025. This institutional research note examines the structural evolution of ILS, the drivers of the current soft market, and the strategic implications for cedants, reinsurers, and ILS managers.",
+  openGraph: {
+    title: "Alternative Capital in Global Insurance and Reinsurance: Evolution, Current State, and Market Impact — 2005 to 2026",
+    description: "Alternative capital grew from under $20bn in 2005 to $136bn by end-2025. Strategic implications for cedants, reinsurers, and ILS managers navigating the current soft market.",
+    url: "https://www.eudaimonconsulting.com/insights/alternative-capital",
+    type: "article",
+    images: [{ url: "/assets/logo.jpg" }],
+  },
+  alternates: {
+    canonical: "https://www.eudaimonconsulting.com/insights/alternative-capital",
+  },
+};
 import Link from "next/link";
 import { ArrowRight, Clock, ChevronLeft } from "lucide-react";
 
