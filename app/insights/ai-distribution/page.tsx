@@ -1,3 +1,19 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Who Controls the Customer? AI Chatbots and the Future of Insurance Distribution",
+  description: "AI chatbots are not a new customer service channel — they are a new distribution front-end that routes customers toward insurance products without the insurer's involvement. A strategic analysis of what this means for insurers and brokers.",
+  openGraph: {
+    title: "Who Controls the Customer? AI Chatbots and the Future of Insurance Distribution",
+    description: "AI chatbots are not a new customer service channel — they are a new distribution front-end that routes customers toward insurance products without the insurer's involvement.",
+    url: "https://www.eudaimonconsulting.com/insights/ai-distribution",
+    type: "article",
+    images: [{ url: "/assets/logo.jpg" }],
+  },
+  alternates: {
+    canonical: "https://www.eudaimonconsulting.com/insights/ai-distribution",
+  },
+};
 import Link from "next/link";
 import { ArrowRight, Clock, ChevronLeft } from "lucide-react";
 
