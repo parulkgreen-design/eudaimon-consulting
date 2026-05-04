@@ -1,3 +1,19 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "The Optimal Frontier: Finding the Balance Between Robots and Risk",
+  description: "Carriers that architect toward Optimal Autonomy will structurally reduce combined ratios by 8–15 percentage points by 2030. A strategic research note for insurance CEOs and Chief Strategy Officers on building AI-native operating models.",
+  openGraph: {
+    title: "The Optimal Frontier: Finding the Balance Between Robots and Risk",
+    description: "Carriers that architect toward Optimal Autonomy will structurally reduce combined ratios by 8–15 percentage points by 2030. A strategic research note for insurance CEOs.",
+    url: "https://www.eudaimonconsulting.com/insights/optimal-autonomy",
+    type: "article",
+    images: [{ url: "/assets/logo.jpg" }],
+  },
+  alternates: {
+    canonical: "https://www.eudaimonconsulting.com/insights/optimal-autonomy",
+  },
+};
 import Link from "next/link";
 import { ArrowRight, Clock, ChevronLeft } from "lucide-react";
 
