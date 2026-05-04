@@ -63,14 +63,14 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-<url>
+
+  <url>
     <loc>https://www.eudaimonconsulting.com/insights/alternative-capital</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
-  
+
   <url>
     <loc>https://www.eudaimonconsulting.com/insights/broker-ai-disruption</loc>
     <lastmod>2026-02-09</lastmod>
