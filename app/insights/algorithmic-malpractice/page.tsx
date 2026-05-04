@@ -1,3 +1,19 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "From Cyber Liability to Algorithmic Malpractice: How Insurers Can Underwrite AI Risk in 2026",
+  description: "The insurance industry spent two decades building a playbook for cyber risk. That playbook is now being challenged by AI. A strategic analysis of how insurers can develop frameworks to underwrite algorithmic liability.",
+  openGraph: {
+    title: "From Cyber Liability to Algorithmic Malpractice: How Insurers Can Underwrite AI Risk in 2026",
+    description: "The insurance industry spent two decades building a playbook for cyber risk. That playbook is now being challenged by AI. The shift is not gradual — it is structural.",
+    url: "https://www.eudaimonconsulting.com/insights/algorithmic-malpractice",
+    type: "article",
+    images: [{ url: "/assets/logo.jpg" }],
+  },
+  alternates: {
+    canonical: "https://www.eudaimonconsulting.com/insights/algorithmic-malpractice",
+  },
+};
 import Link from "next/link";
 import { ArrowRight, Clock, ChevronLeft } from "lucide-react";
 
