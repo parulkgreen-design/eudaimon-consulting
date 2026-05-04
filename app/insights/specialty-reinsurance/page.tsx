@@ -1,3 +1,19 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Reinsurance",
+  description: "Between 2020 and 2026, the specialty reinsurance market has been tested by four distinct macro-level shocks — the most consequential six-year period since the post-September 2001 market reset. A strategic analysis for insurance leaders.",
+  openGraph: {
+    title: "Six Years, Four Shocks: What the Global Risk Landscape Means for Specialty Reinsurance",
+    description: "Between 2020 and 2026, the specialty reinsurance market has been tested by four distinct macro-level shocks — the most consequential six-year period since the post-September 2001 market reset.",
+    url: "https://www.eudaimonconsulting.com/insights/specialty-reinsurance",
+    type: "article",
+    images: [{ url: "/assets/logo.jpg" }],
+  },
+  alternates: {
+    canonical: "https://www.eudaimonconsulting.com/insights/specialty-reinsurance",
+  },
+};
 import Link from "next/link";
 import { ArrowRight, Clock, ChevronLeft } from "lucide-react";
 
