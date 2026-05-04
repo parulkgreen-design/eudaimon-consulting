@@ -1,3 +1,19 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "The February 9 Sell-Off: What It Really Means for Insurance Brokers",
+  description: "When two AI tools launched inside ChatGPT, broker stocks fell sharply. Markets reacted with panic. A strategic analysis of what the sell-off actually signals for insurance brokers and what the right response looks like.",
+  openGraph: {
+    title: "The February 9 Sell-Off: What It Really Means for Insurance Brokers",
+    description: "When two AI tools launched inside ChatGPT, broker stocks fell sharply. Markets reacted with panic. The strategic reality is far more nuanced — and more instructive for every insurer and broker.",
+    url: "https://www.eudaimonconsulting.com/insights/broker-ai-disruption",
+    type: "article",
+    images: [{ url: "/assets/logo.jpg" }],
+  },
+  alternates: {
+    canonical: "https://www.eudaimonconsulting.com/insights/broker-ai-disruption",
+  },
+};
 import Link from "next/link";
 import { ArrowRight, Clock, ChevronLeft } from "lucide-react";
 
