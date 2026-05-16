@@ -5,15 +5,25 @@ import AnimatedSection from "@/components/AnimatedSection";
 const featured = {
   tag: "Corporate Strategy",
   color: "#1D6FA4",
-  title: "Alternative Capital in Global Insurance and Reinsurance: Evolution, Current State, and Market Impact — 2005 to 2026",
+  title: "Who Gets Paid When the Market Softens",
   excerpt:
-    "Alternative capital grew from under $20bn in 2005 to $136bn by year-end 2025. The soft market is no longer a risk scenario — it is the current reality. The strategic question is how long it runs, how deep it goes, and who is positioned to manage through it.",
-  readTime: "9 min read",
+    "The insurance value chain has been reconstructed so that revenue is earned near the point of origination while risk is absorbed further downstream. The soft market did not create this — it makes the consequences harder to ignore.",
+  readTime: "8 min read",
   date: "May 2026",
-  href: "/insights/alternative-capital",
+  href: "/insights/insurance-value-chain-incentives",
 };
 
 const insights = [
+  {
+    tag: "Corporate Strategy",
+    color: "#1D6FA4",
+    title: "Who Gets Paid When the Market Softens",
+    excerpt:
+      "Revenue earned at origination. Risk absorbed downstream. The incentive misalignment in the modern insurance value chain is a structural feature — not a soft market problem.",
+    readTime: "8 min read",
+    date: "May 2026",
+    href: "/insights/insurance-value-chain-incentives",
+  },
   {
     tag: "Corporate Strategy",
     color: "#1D6FA4",
