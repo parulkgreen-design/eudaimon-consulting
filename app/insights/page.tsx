@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Script from "next/script";
 import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
@@ -255,7 +254,7 @@ export default function InsightsPage() {
       </section>
 
       {/* Material Facts Newsletter Signup */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 bg-[#080808]">
         <div className="max-w-2xl mx-auto text-center">
           <AnimatedSection>
             <p className="mono-label text-[#1D6FA4] tracking-widest uppercase mb-4">
@@ -269,12 +268,29 @@ export default function InsightsPage() {
               Weekly insight on AI, strategy, and M&A in financial services.
               One issue. Every Sunday. No filler.
             </p>
-            <Script
-              src="https://subscribe-forms.beehiiv.com/v3/loader.js"
-              data-beehiiv-form="05080685-dc64-4484-8272-03a22749bd56"
-              strategy="lazyOnload"
-            />
-            <div data-beehiiv-form="05080685-dc64-4484-8272-03a22749bd56" />
+            <form
+              action="https://material-facts.beehiiv.com/subscribe"
+              method="post"
+              target="_blank"
+              className="flex flex-col sm:flex-row gap-3 justify-center"
+            >
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Your email address"
+                className="flex-1 px-5 py-3 rounded-full bg-white/5 border border-white/10 text-white placeholder-white/30 focus:outline-none focus:border-[#1D6FA4] transition-colors text-sm max-w-sm"
+              />
+              <button
+                type="submit"
+                className="px-7 py-3 bg-[#E63946] text-white rounded-full font-medium hover:bg-[#c92a35] transition-all text-sm whitespace-nowrap"
+              >
+                Subscribe free
+              </button>
+            </form>
+            <p className="text-white/20 mono-label text-[10px] mt-5">
+              No spam. Unsubscribe any time.
+            </p>
           </AnimatedSection>
         </div>
       </section>
