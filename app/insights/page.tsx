@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
@@ -253,6 +254,34 @@ export default function InsightsPage() {
         </div>
       </section>
 
+      {/* Material Facts Newsletter Signup */}
+      <section className="py-24 px-6">
+        <div className="max-w-2xl mx-auto text-center">
+          <AnimatedSection>
+            <p className="mono-label text-[#1D6FA4] tracking-widest uppercase mb-4">
+              Newsletter
+            </p>
+            <h2 className="display-md text-white font-display mb-4">
+              Material{" "}
+              <span className="italic gradient-text-amber">Facts.</span>
+            </h2>
+            <p className="text-white/60 text-lg leading-relaxed mb-10">
+              Weekly insight on AI, strategy, and M&A in financial services.
+              One issue. Every Sunday. No filler.
+            </p>
+            <Script
+              src="https://subscribe-forms.beehiiv.com/v3/loader.js"
+              data-beehiiv-form="05080685-dc64-4484-8272-03a22749bd56"
+              strategy="lazyOnload"
+            />
+            <div data-beehiiv-form="05080685-dc64-4484-8272-03a22749bd56" />
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <div className="divider-gradient" />
+
+      {/* Consulting Enquiries CTA */}
       <section className="py-24 px-6 bg-[#080808]">
         <div className="max-w-2xl mx-auto text-center">
           <AnimatedSection>
