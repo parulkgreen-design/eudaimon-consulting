@@ -268,26 +268,15 @@ export default function InsightsPage() {
               Weekly insight on AI, strategy, and M&A in financial services.
               One issue. Every Sunday. No filler.
             </p>
-            <form
-              action="https://material-facts.beehiiv.com/subscribe"
-              method="post"
+            <Link
+              href="https://material-facts.beehiiv.com"
               target="_blank"
-              className="flex flex-col sm:flex-row gap-3 justify-center"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 px-8 py-4 bg-[#E63946] text-white rounded-full font-medium hover:bg-[#c92a35] transition-all"
             >
-              <input
-                type="email"
-                name="email"
-                required
-                placeholder="Your email address"
-                className="flex-1 px-5 py-3 rounded-full bg-white/5 border border-white/10 text-white placeholder-white/30 focus:outline-none focus:border-[#1D6FA4] transition-colors text-sm max-w-sm"
-              />
-              <button
-                type="submit"
-                className="px-7 py-3 bg-[#E63946] text-white rounded-full font-medium hover:bg-[#c92a35] transition-all text-sm whitespace-nowrap"
-              >
-                Subscribe free
-              </button>
-            </form>
+              Subscribe free
+              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
             <p className="text-white/20 mono-label text-[10px] mt-5">
               No spam. Unsubscribe any time.
             </p>
