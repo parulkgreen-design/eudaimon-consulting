@@ -5,15 +5,25 @@ import AnimatedSection from "@/components/AnimatedSection";
 const featured = {
   tag: "Corporate Strategy",
   color: "#1D6FA4",
-  title: "Who Gets Paid When the Market Softens",
+  title: "The $123bn Conviction: Why Institutional Capital Keeps Moving Toward Insurance Risk",
   excerpt:
-    "The insurance value chain has been reconstructed so that revenue is earned near the point of origination while risk is absorbed further downstream. The soft market did not create this — it makes the consequences harder to ignore.",
-  readTime: "8 min read",
+    "Total alternative reinsurance capital reached $123bn by end-2025, cat bond issuance hit a record $24.7bn, and CalPERS made its first formal ILS allocation. This note explains why institutional capital keeps moving toward insurance risk — and what it means for insurers, reinsurers, and the competitive landscape.",
+  readTime: "9 min read",
   date: "May 2026",
-  href: "/insights/insurance-value-chain-incentives",
+  href: "/insights/ils-institutional-capital",
 };
 
 const insights = [
+  {
+    tag: "Corporate Strategy",
+    color: "#1D6FA4",
+    title: "The $123bn Conviction: Why Institutional Capital Keeps Moving Toward Insurance Risk",
+    excerpt:
+      "Alternative reinsurance capital reached $123bn in 2025. Institutional investors are not buying 'insurance risk' as a concept — they are selecting specific premium types from a widening spectrum of structures.",
+    readTime: "9 min read",
+    date: "May 2026",
+    href: "/insights/ils-institutional-capital",
+  },
   {
     tag: "Corporate Strategy",
     color: "#1D6FA4",
@@ -253,40 +263,6 @@ export default function InsightsPage() {
         </div>
       </section>
 
-      {/* Material Facts Newsletter Signup */}
-      <section className="py-24 px-6 bg-[#080808]">
-        <div className="max-w-2xl mx-auto text-center">
-          <AnimatedSection>
-            <p className="mono-label text-[#1D6FA4] tracking-widest uppercase mb-4">
-              Newsletter
-            </p>
-            <h2 className="display-md text-white font-display mb-4">
-              Material{" "}
-              <span className="italic gradient-text-amber">Facts.</span>
-            </h2>
-            <p className="text-white/60 text-lg leading-relaxed mb-10">
-              Weekly insight on AI, strategy, and M&A in financial services.
-              One issue. Every Sunday. No filler.
-            </p>
-            <Link
-              href="https://material-facts.beehiiv.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 px-8 py-4 bg-[#E63946] text-white rounded-full font-medium hover:bg-[#c92a35] transition-all"
-            >
-              Subscribe free
-              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <p className="text-white/20 mono-label text-[10px] mt-5">
-              No spam. Unsubscribe any time.
-            </p>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      <div className="divider-gradient" />
-
-      {/* Consulting Enquiries CTA */}
       <section className="py-24 px-6 bg-[#080808]">
         <div className="max-w-2xl mx-auto text-center">
           <AnimatedSection>
