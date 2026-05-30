@@ -223,34 +223,37 @@ export default function UKInsuranceForeignCapitalArticle() {
             </div>
             <div style={{ padding: "20px 20px 8px" }}>
               <div style={{ display: "flex", gap: "6px" }}>
-                {/* Y-axis */}
-                <div style={{ width: "38px", flexShrink: 0, position: "relative", height: `${outflowH}px` }}>
+                {/* Y-axis — £0bn at top, increases downward (outflows) */}
+                <div style={{ width: "44px", flexShrink: 0, position: "relative", height: `${outflowH}px` }}>
                   {outflowYTicks.map((t) => (
-                    <div key={t} style={{ position: "absolute", right: "6px", bottom: `${(t / outflowMax) * outflowH - 6}px` }}>
+                    <div key={t} style={{ position: "absolute", right: "6px", top: `${(t / outflowMax) * outflowH - 6}px` }}>
                       <span style={{ fontSize: "9px", color: "rgba(255,255,255,0.35)" }}>£{t}bn</span>
                     </div>
                   ))}
                   <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "1px", background: "rgba(255,255,255,0.12)" }} />
                 </div>
-                {/* Chart */}
+                {/* Chart — zero at top, bars grow downward */}
                 <div style={{ flex: 1, position: "relative" }}>
+                  {/* Zero baseline at top */}
+                  <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: "1px", background: "rgba(255,255,255,0.2)" }} />
+                  {/* Grid lines at each tick (positioned from top) */}
                   {outflowYTicks.filter(t => t > 0).map((t) => (
-                    <div key={t} style={{ position: "absolute", left: 0, right: 0, bottom: `${(t / outflowMax) * outflowH}px`, height: "1px", background: "rgba(255,255,255,0.05)" }} />
+                    <div key={t} style={{ position: "absolute", left: 0, right: 0, top: `${(t / outflowMax) * outflowH}px`, height: "1px", background: "rgba(255,255,255,0.05)" }} />
                   ))}
-                  <div style={{ display: "flex", alignItems: "flex-end", height: `${outflowH}px`, gap: "4px", position: "relative", zIndex: 1 }}>
+                  {/* Bars grow downward from top */}
+                  <div style={{ display: "flex", alignItems: "flex-start", height: `${outflowH}px`, gap: "4px", position: "relative", zIndex: 1 }}>
                     {outflows.map((d) => {
                       const h = (d.val / outflowMax) * outflowH;
                       return (
-                        <div key={d.year} style={{ flex: 1, height: `${h}px`, background: d.highlight ? "#E63946" : "rgba(230,57,70,0.45)", borderRadius: "2px 2px 0 0" }} />
+                        <div key={d.year} style={{ flex: 1, height: `${h}px`, background: d.highlight ? "#E63946" : "rgba(230,57,70,0.45)", borderRadius: "0 0 2px 2px" }} />
                       );
                     })}
                   </div>
-                  <div style={{ height: "1px", background: "rgba(255,255,255,0.12)" }} />
                 </div>
               </div>
               {/* X labels */}
               <div style={{ display: "flex", gap: "6px", marginTop: "4px" }}>
-                <div style={{ width: "38px", flexShrink: 0 }} />
+                <div style={{ width: "44px", flexShrink: 0 }} />
                 <div style={{ flex: 1, display: "flex", gap: "4px" }}>
                   {outflows.map((d) => (
                     <div key={d.year} style={{ flex: 1, textAlign: "center" }}>
