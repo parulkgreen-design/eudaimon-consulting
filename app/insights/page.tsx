@@ -3,17 +3,27 @@ import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const featured = {
-  tag: "Insurance Strategy · UK Capital Markets · M&A",
-  color: "#E63946",
-  title: "Why Foreign Capital Is Buying UK Insurance",
+  tag: "Specialty Insurance",
+  color: "#1D6FA4",
+  title: "From Rocket Failures to SpaceX IPO: The State of Space Insurance in 2026",
   excerpt:
-    "More than £16bn of UK insurance acquisitions agreed or completed in twelve months. Global acquirers see regulated balance sheets, specialty franchises, and long-duration capital platforms where London public markets see income stocks. That gap is the story.",
+    "A $626 billion space economy, a structurally impaired insurance market, and the largest IPO in history arrive simultaneously. The implications for insurers and capital providers are significant and largely unpriced.",
   readTime: "10 min read",
-  date: "May 2026",
-  href: "/insights/uk-insurance-foreign-capital",
+  date: "June 2026",
+  href: "/insights/space-insurance-2026",
 };
 
 const insights = [
+  {
+    tag: "Specialty Insurance",
+    color: "#1D6FA4",
+    title: "From Rocket Failures to SpaceX IPO: The State of Space Insurance in 2026",
+    excerpt:
+      "A $626bn space economy, a structurally impaired insurance market, and the largest IPO in history arrive simultaneously. The implications for insurers and capital providers are significant and largely unpriced.",
+    readTime: "10 min read",
+    date: "June 2026",
+    href: "/insights/space-insurance-2026",
+  },
   {
     tag: "Insurance Strategy · M&A",
     color: "#E63946",
