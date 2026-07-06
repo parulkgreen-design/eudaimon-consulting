@@ -3,17 +3,27 @@ import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const featured = {
-  tag: "Specialty Insurance",
-  color: "#1D6FA4",
-  title: "From Rocket Failures to SpaceX IPO: The State of Space Insurance in 2026",
+  tag: "Cyber & Technology Risk",
+  color: "#E63946",
+  title: "The NAIC Breach and the Accumulation Problem: What Cyber Reinsurance Is Not Pricing",
   excerpt:
-    "A $626 billion space economy, a structurally impaired insurance market, and the largest IPO in history arrive simultaneously. The implications for insurers and capital providers are significant and largely unpriced.",
-  readTime: "10 min read",
-  date: "June 2026",
-  href: "/insights/space-insurance-2026",
+    "Cyber reinsurance rates fell 32% at the January 2026 renewals. The NAIC breach showed that concentration risk now runs through shared software vendors and regulatory infrastructure. That gap should be getting more attention.",
+  readTime: "9 min read",
+  date: "July 2026",
+  href: "/insights/cyber-accumulation-naic-breach",
 };
 
 const insights = [
+  {
+    tag: "Cyber & Technology Risk",
+    color: "#E63946",
+    title: "The NAIC Breach and the Accumulation Problem: What Cyber Reinsurance Is Not Pricing",
+    excerpt:
+      "Cyber reinsurance rates fell 32% at the January 2026 renewals, as evidence from the Five Eyes agencies and Verizon's DBIR showed the interval between vulnerability disclosure and exploitation compressing faster than most organisations patch.",
+    readTime: "9 min read",
+    date: "July 2026",
+    href: "/insights/cyber-accumulation-naic-breach",
+  },
   {
     tag: "Specialty Insurance",
     color: "#1D6FA4",
@@ -123,26 +133,6 @@ const insights = [
     readTime: "6 min read",
     date: "February 2026",
     href: "/insights/broker-ai-disruption",
-  },
-  {
-    tag: "Digital Transformation",
-    color: "#1D6FA4",
-    title: "Why Most Digital Transformations in Insurance Fail",
-    excerpt:
-      "Financial services companies have invested billions in digital transformation. Most have little to show for it. We explore the five structural reasons transformations stall.",
-    readTime: "6 min read",
-    date: "November 2024",
-    href: "/contact",
-  },
-  {
-    tag: "ESG Strategy",
-    color: "#F4A01C",
-    title: "Integrating ESG into Financial Services Strategy",
-    excerpt:
-      "ESG is no longer a compliance exercise. It is a strategic imperative. We explore how financial services companies can build genuine ESG strategies that create value and manage risk.",
-    readTime: "7 min read",
-    date: "September 2024",
-    href: "/contact",
   },
 ];
 
