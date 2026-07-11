@@ -3,17 +3,27 @@ import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const featured = {
-  tag: "Cyber & Technology Risk",
-  color: "#E63946",
-  title: "The NAIC Breach and the Accumulation Problem: What Cyber Reinsurance Is Not Pricing",
+  tag: "Specialty Insurance",
+  color: "#1D6FA4",
+  title: "Softening Prices and MGA Survival: Which Businesses a Soft Market Actually Threatens",
   excerpt:
-    "Cyber reinsurance rates fell 32% at the January 2026 renewals. The NAIC breach showed that concentration risk now runs through shared software vendors and regulatory infrastructure. That gap should be getting more attention.",
-  readTime: "9 min read",
+    "A soft market is widely held to be existential for MGAs. Tested against three cycles, the belief is wrong about the model and right about a defined cohort of undifferentiated, single-capacity and subscale businesses.",
+  readTime: "10 min read",
   date: "July 2026",
-  href: "/insights/cyber-accumulation-naic-breach",
+  href: "/insights/softening-prices-and-mga-survival",
 };
 
 const insights = [
+  {
+    tag: "Specialty Insurance",
+    color: "#1D6FA4",
+    title: "Softening Prices and MGA Survival: Which Businesses a Soft Market Actually Threatens",
+    excerpt:
+      "A soft market is widely held to be existential for MGAs. The evidence shows a sector three to four times larger than at its last soft market, where the real threat is capacity concentration and leverage set at the top of the cycle, not falling rates alone.",
+    readTime: "10 min read",
+    date: "July 2026",
+    href: "/insights/softening-prices-and-mga-survival",
+  },
   {
     tag: "Cyber & Technology Risk",
     color: "#E63946",
