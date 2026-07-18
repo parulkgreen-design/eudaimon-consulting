@@ -10,7 +10,7 @@ const featured = {
     "The LMA's 2025/26 Claims Talent Survey is being read as a recruitment story. Tested against US, UK and European evidence, it is better read as a warning about where claims judgement actually sits, and what leaders should do about it over five years.",
   readTime: "9 min read",
   date: "July 2026",
-  href: "/insights/claims-expertise-scarcity",
+  href: "/insights/claims-talent-strategy",
 };
 
 const insights = [
@@ -22,7 +22,7 @@ const insights = [
       "Deep claims experience in the London Market fell from 37% to 31% in two years while junior hiring surged. The evidence points to an experience shortage, not a talent shortage, and it demands an operating model response rather than a recruitment campaign.",
     readTime: "9 min read",
     date: "July 2026",
-    href: "/insights/claims-expertise-scarcity",
+    href: "/insights/claims-talent-strategy",
   },
   {
     tag: "Specialty Insurance",
