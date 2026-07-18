@@ -3,17 +3,27 @@ import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const featured = {
-  tag: "Specialty Insurance",
+  tag: "Claims & Talent Strategy",
   color: "#1D6FA4",
-  title: "Softening Prices and MGA Survival: Which Businesses a Soft Market Actually Threatens",
+  title: "Claims Expertise Is Becoming Scarce. What Happens Next?",
   excerpt:
-    "A soft market is widely held to be existential for MGAs. Tested against three cycles, the belief is wrong about the model and right about a defined cohort of undifferentiated, single-capacity and subscale businesses.",
-  readTime: "10 min read",
+    "The LMA's 2025/26 Claims Talent Survey is being read as a recruitment story. Tested against US, UK and European evidence, it is better read as a warning about where claims judgement actually sits, and what leaders should do about it over five years.",
+  readTime: "9 min read",
   date: "July 2026",
-  href: "/insights/softening-prices-and-mga-survival",
+  href: "/insights/claims-expertise-scarcity",
 };
 
 const insights = [
+  {
+    tag: "Claims & Talent Strategy",
+    color: "#1D6FA4",
+    title: "Claims Expertise Is Becoming Scarce. What Happens Next?",
+    excerpt:
+      "Deep claims experience in the London Market fell from 37% to 31% in two years while junior hiring surged. The evidence points to an experience shortage, not a talent shortage, and it demands an operating model response rather than a recruitment campaign.",
+    readTime: "9 min read",
+    date: "July 2026",
+    href: "/insights/claims-expertise-scarcity",
+  },
   {
     tag: "Specialty Insurance",
     color: "#1D6FA4",
