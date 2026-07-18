@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Claims Expertise Is Becoming Scarce. What Happens Next?",
     description: "Claims is becoming a core determinant of underwriting margin and franchise value, at the exact moment its deepest experience is retiring.",
-    url: "https://www.eudaimonconsulting.com/insights/claims-expertise-scarcity",
+    url: "https://www.eudaimonconsulting.com/insights/claims-talent-strategy",
     type: "article",
     images: [{ url: "/assets/logo.jpg" }],
   },
-  alternates: { canonical: "https://www.eudaimonconsulting.com/insights/claims-expertise-scarcity" },
+  alternates: { canonical: "https://www.eudaimonconsulting.com/insights/claims-talent-strategy" },
 };
 
 import Link from "next/link";
