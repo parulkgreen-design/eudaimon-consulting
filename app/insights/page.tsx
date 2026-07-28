@@ -3,17 +3,27 @@ import { ArrowRight, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const featured = {
-  tag: "Claims & Talent Strategy",
-  color: "#1D6FA4",
-  title: "Claims Expertise Is Becoming Scarce. What Happens Next?",
+  tag: "Reinsurance · Capital Strategy",
+  color: "#F4A01C",
+  title: "The Reinsurance Capital Arbitrage in 2026: A Line-by-Line Opportunity for P&C Insurers",
   excerpt:
-    "The LMA's 2025/26 Claims Talent Survey is being read as a recruitment story. Tested against US, UK and European evidence, it is better read as a warning about where claims judgement actually sits, and what leaders should do about it over five years.",
-  readTime: "9 min read",
+    "Property and financial lines reinsurance pricing has fallen 16% year to date on record capital of $790bn. Chubb has bought more of it — increasing ceded premiums by more than 20% in North America Commercial. Casualty is a different story entirely.",
+  readTime: "7 min read",
   date: "July 2026",
-  href: "/insights/claims-talent-strategy",
+  href: "/insights/reinsurance-capital-arbitrage-2026",
 };
 
 const insights = [
+  {
+    tag: "Reinsurance · Capital Strategy",
+    color: "#F4A01C",
+    title: "The Reinsurance Capital Arbitrage in 2026: A Line-by-Line Opportunity for P&C Insurers",
+    excerpt:
+      "The Guy Carpenter Global Property Cat Rate-on-Line Index is down 16% year to date on record capital of $790bn. Chubb is buying the discount in property and financial lines. The arbitrage does not extend to casualty.",
+    readTime: "7 min read",
+    date: "July 2026",
+    href: "/insights/reinsurance-capital-arbitrage-2026",
+  },
   {
     tag: "Claims & Talent Strategy",
     color: "#1D6FA4",
